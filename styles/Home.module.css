@@ -629,7 +629,7 @@
     height: 37px !important;
   }
   .nav {
-    width: 763px;
+    width: 615px !important;
   }
   .nav ul {
     display: flex;
@@ -640,7 +640,7 @@
   .nav ul li {
     font-family: "Roboto Lt";
     font-weight: 300;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 22px;
     padding: 3px;
     color: black;
@@ -1038,15 +1038,15 @@
 .getstarted .transparent {
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: -50px;
   display: flex;
   opacity: 0.8;
   background: #FFFFFF;
-  width: 86%;
-  height: 270px;
+  width: 75%;
+  height: 221px;
   border: 2px solid #7161EF;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 24px;
 }
 .getstarted .transparent .left {
@@ -1060,9 +1060,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 27px;
-  line-height: 40px;
-  color: #7161EF;
+  font-size: 24px;
+  line-height: 30px;
 }
 .getstarted .transparent .right {
   width: 60%;
@@ -1075,15 +1074,15 @@
   font-family: "Roboto Lt";
   font-style: normal;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 40px;
+  font-size: 21px;
+  line-height: 28px;
   color: #263238;
 }
 .getstarted .transparent .right .button {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 18px;
   line-height: 12px;
   background: #7161EF;
   padding: 24px 78px;
