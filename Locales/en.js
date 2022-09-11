@@ -1,5 +1,8 @@
 export default {
     subtitle: 'Accelerating science',
+    home:'Home',
+    mobile:'Mobile Apps',
+    features:'Features',
     bh:'Automated Solution for Your Healthcare Needs!',
     signin: 'Sign In',
     directory: 'Directory',

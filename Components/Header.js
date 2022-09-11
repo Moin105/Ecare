@@ -28,9 +28,9 @@ function Header() {
         </figure>
     <div className={styles.nav}>
         <ul>
-            <li>Home{t.subtitle}</li>
+            <li>{t.home}</li>
             <li>{t.about}</li>
-            <li>Mobile Apps</li>
+            <li>{t.mobile}</li>
             <li>Features</li>
         </ul>
     </div>

@@ -1,5 +1,8 @@
 export default {
     subtitle: 'Accélérateur de science',
+    home:'Maison',
+    mobile:'Application mobile',
+    features:'Fonctionnalités',
     bh:'Solution automatisée pour vos besoins de santé !',
     signin: 'Connexion',
     directory: 'Liens utiles',
