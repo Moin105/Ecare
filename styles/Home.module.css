@@ -192,6 +192,7 @@
   font-family: "Roboto Lt";
   font-style: normal;
   font-weight: 300;
+  max-width: 800px !important;
   font-size: 36px;
   line-height: 44px;
   width: 100%;
@@ -227,6 +228,7 @@
   display: flex;
   margin: 100px 272px;
   flex-direction: column;
+  align-items: center;
 }
 .wcare .h2 {
   font-family: "Poppins";
@@ -243,6 +245,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
+  max-width: 800px;
   line-height: 44px;
   width: 100%;
   text-align: center;
@@ -250,6 +253,7 @@
 .wcare .row1 {
   margin: 70px 0px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 .wcare .row1 .docbox {
@@ -416,6 +420,7 @@
 }
 .contact .sep .right .form {
   display: flex;
+  max-width: 700px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -631,27 +636,14 @@
   .nav {
     width: 615px !important;
   }
-  .nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    gap: 72px;
-  }
   .nav ul li {
-    font-family: "Roboto Lt";
-    font-weight: 300;
     font-size: 18px !important;
     line-height: 22px;
     padding: 3px;
-    color: black;
   }
   .langc {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px !important;
     line-height: 24px;
-    color: #7161EF;
   }
   .context {
     margin: 22px 172px 100px 172px;
@@ -667,122 +659,66 @@
   }
 }
 .ban {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0px 0px 40px 0px;
 }
 
 .platform {
-  display: flex;
-  flex-direction: column;
   margin: 22px 172px 100px 172px;
-  justify-content: center;
-  align-items: center;
 }
 .platform .h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
   line-height: 50px;
-  text-align: center;
-  color: #7161EF;
 }
 .platform .subtext {
   padding: 0px 0px 22px 0px;
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
   font-size: 24px;
   line-height: 36px;
-  width: 100%;
-  text-align: center;
 }
 .platform .row {
-  display: flex;
   gap: 18px;
 }
 .platform .row .card {
-  display: flex;
   max-width: 335px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .platform .row .card .ils {
   width: 250px;
   height: 270px;
-  background: #F7F5FF;
-  position: relative;
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
-  align-items: center;
 }
 .platform .row .card .ils .figure {
-  position: absolute;
   width: 165px;
   bottom: 0;
   height: 155px;
 }
 .platform .row .card .subheading {
   padding: 29px 0px 0px 0px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 21px;
-  color: #7161EF;
   line-height: 36px;
   width: 220px;
 }
 .platform .row .card .description {
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   width: 220px;
-  color: #263238;
 }
 
-.itworks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .itworks .h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
   line-height: 50px;
-  text-align: center;
-  color: #7161EF;
 }
 .itworks .subtext {
   padding: 0px 0px 32px 0px;
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
   font-size: 24px;
   line-height: 36px;
-  width: 100%;
-  text-align: center;
 }
 .itworks .section {
-  display: flex;
   margin: 0px 172px;
   gap: 80px;
-  justify-content: space-between;
 }
 .itworks .section .left {
   width: 48%;
 }
 .itworks .section .left .figure {
-  position: relative;
   width: 470px;
   height: 670px;
 }
@@ -790,50 +726,28 @@
   width: 48%;
   display: flex;
   margin: 100px 0px 0px 0px;
-  flex-direction: column;
 }
 .itworks .section .right .figure {
-  position: relative;
   width: 502px;
   height: 465px;
 }
 
 .wcare {
-  display: flex;
   margin: 50px 172px;
-  flex-direction: column;
 }
 .wcare .h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
   line-height: 50px;
-  text-align: center;
-  color: #7161EF;
 }
 .wcare .subtext {
   padding: 0px 0px 32px 0px;
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
   font-size: 24px;
   line-height: 36px;
-  width: 100%;
-  text-align: center;
 }
 .wcare .row1 {
   margin: 40px 0px;
-  display: flex;
-  justify-content: space-between;
 }
 .wcare .row1 .docbox {
-  display: flex;
-  flex-direction: column;
-  background: #7161EF;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  position: relative;
   width: 400px;
   height: 230px;
   padding: 60px 44px 58px 43px;
@@ -841,47 +755,25 @@
 .wcare .row1 .docbox .circle {
   width: 100px;
   height: 100px;
-  position: absolute;
   top: -70px;
-  background-color: #F7F5FF;
-  border-radius: 440px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .wcare .row1 .docbox .circle .figure {
-  position: relative;
   width: 55px;
   height: 55px;
 }
 .wcare .row1 .docbox .h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 22px;
   line-height: 38px;
-  color: #FFFFFF;
 }
 .wcare .row1 .docbox .p {
-  font-family: "Roboto Lt";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: #FFFFFF;
 }
 .wcare .row2 {
   margin: 40px 0px;
-  display: flex;
-  justify-content: center;
 }
 .wcare .row2 .docbox {
-  display: flex;
-  flex-direction: column;
-  background: #7161EF;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  position: relative;
   width: 400px;
   height: 230px;
   padding: 60px 44px 58px 43px;
@@ -891,278 +783,137 @@
   height: 100px;
   position: absolute;
   top: -70px;
-  background-color: #F7F5FF;
-  border-radius: 440px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .wcare .row2 .docbox .circle .figure {
-  position: relative;
   width: 55px;
   height: 55px;
 }
 .wcare .row2 .docbox .h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 22px;
   line-height: 38px;
-  color: #FFFFFF;
 }
 .wcare .row2 .docbox .p {
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: #FFFFFF;
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  background: #F7F5FF;
   margin: 0px 172px;
-  justify-content: center;
-  align-items: center;
 }
 .contact .h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
   line-height: 50px;
-  text-align: center;
-  color: #7161EF;
 }
 .contact .p {
   padding: 0px 0px 32px 0px;
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
   font-size: 24px;
   line-height: 36px;
-  width: 100%;
-  text-align: center;
 }
 .contact .sep {
-  display: flex;
   width: 100%;
 }
 .contact .sep .left {
   margin: 0px 57px 0px 0px;
 }
 .contact .sep .left .figure {
-  position: relative;
   width: 375px;
   height: 400px;
   margin: 60px 0px;
 }
 .contact .sep .right {
-  display: flex;
   width: 60%;
-  flex-direction: column;
-  justify-content: center;
   margin: 10px 0px 30px 10px;
 }
 .contact .sep .right .button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #FFFFFF;
-  background-color: #7161EF;
   padding: 10px 40px;
   width: 132px;
-  border: none;
-  outline: none;
-  border-radius: 8px;
   margin-bottom: 30px;
-  align-self: flex-end;
 }
 .contact .sep .right .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 30px 30px;
-  border-radius: 44px;
-  background-color: white;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 }
 .contact .sep .right .form .input {
-  background: #F7F5FF;
-  border: 1px solid #7161EF;
-  border-radius: 8px;
   padding: 22px 0px 22px 44px;
   margin-bottom: 32px;
-  width: 100%;
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
 }
 .contact .sep .right .form .message {
-  width: 100%;
-  background: #F7F5FF;
-  border: 1px solid #7161EF;
-  border-radius: 8px;
   padding: 22px 0px 22px 44px;
   margin-bottom: 32px;
-  max-width: 100%;
-  font-family: "Roboto Lt";
-  font-style: normal;
   font-weight: 300;
   height: 119px;
   padding: 20px 10px 20px 40px;
-  word-wrap: break-word;
-  word-break: break-all;
-  outline: none;
-  border-radius: 20px;
   font-size: 18px;
   line-height: 21.94px;
 }
 
 .getstarted {
-  display: flex;
-  position: relative;
   margin: 20px 172px 115px 172px;
-  align-items: center;
-  justify-content: center;
 }
 .getstarted .figure {
   width: 100%;
-  position: relative;
 }
 .getstarted .transparent {
-  position: absolute;
-  right: 0;
   bottom: -50px;
-  display: flex;
-  opacity: 0.8;
-  background: #FFFFFF;
   width: 75%;
   height: 221px;
-  border: 2px solid #7161EF;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 24px;
 }
 .getstarted .transparent .left {
   width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .getstarted .transparent .left .h2 {
   margin: 0px 0px 0px 25px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 24px;
   line-height: 30px;
 }
 .getstarted .transparent .right {
   width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .getstarted .transparent .right .p {
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
   font-size: 21px;
   line-height: 28px;
-  color: #263238;
 }
 .getstarted .transparent .right .button {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 12px;
-  background: #7161EF;
-  padding: 24px 78px;
-  color: #FFFFFF;
-  border-radius: 24px 0px 24px 0px;
-  border: none;
-  outline: none;
-  align-self: end;
-  position: absolute;
-  /* margin: -15px -2px -5px 0px; */
+  padding: 20px 50px;
   bottom: 0;
   right: -2px;
 }
 
-.footer {
-  display: flex;
-  border-top: 1px solid #B6C5D1;
-  flex-direction: column;
-}
 .footer .ufooter {
   padding: 64px 0px 64px 61px;
-  display: flex;
   margin: 0px 172px;
-  justify-content: space-between;
-  display: flex;
 }
 .footer .ufooter .newsletter {
   width: 33%;
-  display: flex;
-  flex-direction: column;
 }
 .footer .ufooter .newsletter .h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #7161EF;
-  margin-bottom: 16px;
 }
 .footer .ufooter .newsletter .p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
   font-size: 12px;
   line-height: 28px;
   margin-bottom: 16px;
 }
 .footer .ufooter .newsletter .ebox {
-  display: flex;
   height: 46px;
 }
 .footer .ufooter .newsletter .ebox .button {
   padding: 10px 52px;
-  color: white;
-  background: #7161EF;
   border-radius: 0px 8px 8px 0px;
-  outline: 0;
-  border: none;
 }
 .footer .ufooter .newsletter .input {
-  background: #F7F5FF;
-  border: 1px solid #7161EF;
-  border-radius: 8px 0px 0px 8px;
   padding: 22px 0px 22px 44px;
   margin-bottom: 32px;
-  width: 100%;
-  font-family: "Roboto Lt";
-  font-style: normal;
-  font-weight: 300;
 }
 .footer .ufooter .list {
   list-style-type: none;
 }
 .footer .ufooter .list .li {
-  list-style-type: none;
   margin-bottom: 16px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
   font-size: 12px;
   line-height: 16px;
 }
@@ -1171,20 +922,313 @@
 }
 .footer .ufooter .list2 .li {
   margin-bottom: 16px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
   font-size: 12px;
   line-height: 16px;
-  list-style-type: none;
 }
 .footer .bfooter {
-  background: #263238;
-  display: flex;
-  justify-content: center;
   padding: 17px 0px;
-  align-items: center;
-  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    width: 155.51px !important;
+    position: relative;
+    height: 37px !important;
+  }
+  .nav {
+    width: 615px !important;
+  }
+  .nav ul li {
+    font-size: 18px !important;
+    line-height: 22px;
+    padding: 3px;
+  }
+  .langc {
+    font-size: 18px !important;
+    line-height: 24px;
+  }
+  .context {
+    margin: 22px 72px 100px 72px;
+  }
+  .context .h2 {
+    font-size: 54px;
+    line-height: 60px;
+  }
+  .context .subtext {
+    padding: 18px 0px;
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+.ban {
+  padding: 0px 0px 40px 0px;
+}
+
+.platform {
+  margin: 22px 72px 100px 72px;
+}
+.platform .h2 {
+  font-size: 32px;
+  line-height: 50px;
+}
+.platform .subtext {
+  padding: 0px 0px 22px 0px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.platform .row {
+  gap: 18px;
+}
+.platform .row .card {
+  max-width: 335px;
+}
+.platform .row .card .ils {
+  width: 250px;
+  height: 270px;
+  border-radius: 8px;
+}
+.platform .row .card .ils .figure {
+  width: 165px;
+  bottom: 0;
+  height: 155px;
+}
+.platform .row .card .subheading {
+  padding: 29px 0px 0px 0px;
+  font-size: 21px;
+  line-height: 36px;
+  width: 220px;
+}
+.platform .row .card .description {
+  font-size: 16px;
+  line-height: 24px;
+  width: 220px;
+}
+
+.itworks .h2 {
+  font-size: 32px;
+  line-height: 50px;
+}
+.itworks .subtext {
+  padding: 0px 0px 32px 0px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.itworks .section {
+  margin: 0px 72px;
+  gap: 80px;
+}
+.itworks .section .left {
+  width: 48%;
+}
+.itworks .section .left .figure {
+  width: 470px;
+  height: 670px;
+}
+.itworks .section .right {
+  width: 48%;
+  display: flex;
+  margin: 100px 0px 0px 0px;
+}
+.itworks .section .right .figure {
+  width: 502px;
+  height: 465px;
+}
+
+.wcare {
+  margin: 50px 72px;
+}
+.wcare .h2 {
+  font-size: 32px;
+  line-height: 50px;
+}
+.wcare .subtext {
+  padding: 0px 0px 32px 0px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.wcare .row1 {
+  margin: 40px 0px;
+}
+.wcare .row1 .docbox {
+  width: 400px;
+  height: 230px;
+  padding: 60px 44px 58px 43px;
+}
+.wcare .row1 .docbox .circle {
+  width: 100px;
+  height: 100px;
+  top: -70px;
+}
+.wcare .row1 .docbox .circle .figure {
+  width: 55px;
+  height: 55px;
+}
+.wcare .row1 .docbox .h4 {
+  font-size: 22px;
+  line-height: 38px;
+}
+.wcare .row1 .docbox .p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+}
+.wcare .row2 {
+  margin: 40px 0px;
+}
+.wcare .row2 .docbox {
+  width: 400px;
+  height: 230px;
+  padding: 60px 44px 58px 43px;
+}
+.wcare .row2 .docbox .circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -70px;
+}
+.wcare .row2 .docbox .circle .figure {
+  width: 55px;
+  height: 55px;
+}
+.wcare .row2 .docbox .h4 {
+  font-size: 22px;
+  line-height: 38px;
+}
+.wcare .row2 .docbox .p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.contact {
+  margin: 0px 72px;
+}
+.contact .h2 {
+  font-size: 32px;
+  line-height: 50px;
+}
+.contact .p {
+  padding: 0px 0px 32px 0px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.contact .sep {
+  width: 100%;
+}
+.contact .sep .left {
+  margin: 0px 57px 0px 0px;
+}
+.contact .sep .left .figure {
+  width: 375px;
+  height: 400px;
+  margin: 60px 0px;
+}
+.contact .sep .right {
+  width: 60%;
+  margin: 10px 0px 30px 10px;
+}
+.contact .sep .right .button {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px 40px;
+  width: 132px;
+  margin-bottom: 30px;
+}
+.contact .sep .right .form {
+  padding: 30px 30px;
+}
+.contact .sep .right .form .input {
+  padding: 22px 0px 22px 44px;
+  margin-bottom: 32px;
+}
+.contact .sep .right .form .message {
+  padding: 22px 0px 22px 44px;
+  margin-bottom: 32px;
+  font-weight: 300;
+  height: 119px;
+  padding: 20px 10px 20px 40px;
+  font-size: 18px;
+  line-height: 21.94px;
+}
+
+.getstarted {
+  margin: 20px 72px 115px 72px;
+}
+.getstarted .figure {
+  width: 100%;
+}
+.getstarted .transparent {
+  bottom: -50px;
+  width: 75%;
+  height: 221px;
+}
+.getstarted .transparent .left {
+  width: 40%;
+}
+.getstarted .transparent .left .h2 {
+  margin: 0px 0px 0px 25px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.getstarted .transparent .right {
+  width: 60%;
+}
+.getstarted .transparent .right .p {
+  font-size: 21px;
+  line-height: 28px;
+}
+.getstarted .transparent .right .button {
+  font-size: 18px;
+  line-height: 12px;
+  padding: 24px 78px;
+  bottom: 0;
+  right: -2px;
+}
+
+.footer .ufooter {
+  padding: 64px 0px 64px 61px;
+  margin: 0px 72px;
+}
+.footer .ufooter .newsletter {
+  width: 33%;
+}
+.footer .ufooter .newsletter .h4 {
+  font-size: 18px;
+  line-height: 28px;
+}
+.footer .ufooter .newsletter .p {
+  font-size: 12px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.footer .ufooter .newsletter .ebox {
+  height: 46px;
+}
+.footer .ufooter .newsletter .ebox .button {
+  padding: 10px 52px;
+  border-radius: 0px 8px 8px 0px;
+}
+.footer .ufooter .newsletter .input {
+  padding: 22px 0px 22px 44px;
+  margin-bottom: 32px;
+}
+.footer .ufooter .list {
+  list-style-type: none;
+}
+.footer .ufooter .list .li {
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.footer .ufooter .list2 {
+  list-style-type: none;
+}
+.footer .ufooter .list2 .li {
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.footer .bfooter {
+  padding: 17px 0px;
 }
 
 @font-face {
