@@ -1,13 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from '../styles/Home.module.css'
 import logo from '../public/logo.png'
 import Image from "next/image"
 import { useRouter } from 'next/router';
-
+import Nav from './Nav'
 import en from "../Locales/en"
 import fr from "../Locales/fr"
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 function Header() {
+  const navHandle = () => {
+    console.log("$$$$$$$$$$$$$$$$$$$$$$$$", nav);
+    setNav(!nav);
+  };
+  const [nav, setNav] = useState(true);
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ?   en : fr;
@@ -44,7 +50,8 @@ function Header() {
             <option className="text-black" value="fr">FR</option>
           </select>
       </p></div>
-
+      <div className={styles.ham} onClick={navHandle}><GiHamburgerMenu/></div>
+      {nav && <Nav setNav={setNav} />}
     </header>
   )
 }

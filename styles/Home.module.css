@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.ham {
+  display: none;
+}
+
 .header {
   margin: 60px 72px;
   display: flex;
@@ -960,7 +964,7 @@
     line-height: 24px;
   }
   .context {
-    margin: 22px 72px 100px 72px;
+    margin: 22px 30px 100px 30px;
   }
   .context .h2 {
     font-size: 54px;
@@ -971,278 +975,692 @@
     font-size: 32px;
     line-height: 46px;
   }
+  .ban {
+    padding: 0px 0px 40px 0px;
+  }
+  .platform {
+    margin: 22px 30px 100px 30px;
+  }
+  .platform .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .platform .subtext {
+    padding: 0px 0px 22px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .platform .row {
+    gap: 18px;
+  }
+  .platform .row .card {
+    max-width: 335px;
+  }
+  .platform .row .card .ils {
+    width: 250px;
+    height: 270px;
+    border-radius: 8px;
+  }
+  .platform .row .card .ils .figure {
+    width: 165px;
+    bottom: 0;
+    height: 155px;
+  }
+  .platform .row .card .subheading {
+    padding: 29px 0px 0px 0px;
+    font-size: 21px;
+    line-height: 36px;
+    width: 220px;
+  }
+  .platform .row .card .description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 220px;
+  }
+  .itworks .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .itworks .subtext {
+    padding: 0px 0px 32px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .itworks .section {
+    margin: 0px 30px;
+    gap: 80px;
+  }
+  .itworks .section .left {
+    width: 48%;
+  }
+  .itworks .section .left .figure {
+    width: 470px;
+    height: 670px;
+  }
+  .itworks .section .right {
+    width: 48%;
+    display: flex;
+    margin: 100px 0px 0px 0px;
+  }
+  .itworks .section .right .figure {
+    width: 502px;
+    height: 465px;
+  }
+  .wcare {
+    margin: 50px 30px !important;
+  }
+  .wcare .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .wcare .subtext {
+    padding: 0px 0px 32px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .wcare .row1 {
+    margin: 40px 0px;
+  }
+  .wcare .row1 .docbox {
+    width: 400px;
+    height: 230px;
+    padding: 60px 44px 58px 43px;
+  }
+  .wcare .row1 .docbox .circle {
+    width: 100px;
+    height: 100px;
+    top: -70px;
+  }
+  .wcare .row1 .docbox .circle .figure {
+    width: 55px;
+    height: 55px;
+  }
+  .wcare .row1 .docbox .h4 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .wcare .row1 .docbox .p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .wcare .row2 {
+    margin: 40px 0px;
+  }
+  .wcare .row2 .docbox {
+    width: 400px;
+    height: 230px;
+    padding: 60px 44px 58px 43px;
+  }
+  .wcare .row2 .docbox .circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -70px;
+  }
+  .wcare .row2 .docbox .circle .figure {
+    width: 55px;
+    height: 55px;
+  }
+  .wcare .row2 .docbox .h4 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .wcare .row2 .docbox .p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .contact {
+    margin: 0px 30px;
+  }
+  .contact .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .contact .p {
+    padding: 0px 0px 32px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .contact .sep {
+    width: 100%;
+  }
+  .contact .sep .left {
+    margin: 0px 57px 0px 0px;
+  }
+  .contact .sep .left .figure {
+    width: 375px;
+    height: 400px;
+    margin: 60px 0px;
+  }
+  .contact .sep .right {
+    width: 60%;
+    margin: 10px 0px 30px 10px;
+  }
+  .contact .sep .right .button {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 40px;
+    width: 132px;
+    margin-bottom: 30px;
+  }
+  .contact .sep .right .form {
+    padding: 30px 30px;
+  }
+  .contact .sep .right .form .input {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 32px;
+  }
+  .contact .sep .right .form .message {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 32px;
+    font-weight: 300;
+    height: 119px;
+    padding: 20px 10px 20px 40px;
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .getstarted {
+    margin: 20px 30px 115px 30px;
+    width: 90%;
+  }
+  .getstarted .figure {
+    width: 100%;
+  }
+  .getstarted .transparent {
+    bottom: -50px;
+    width: 75%;
+    height: 221px;
+  }
+  .getstarted .transparent .left {
+    width: 40%;
+  }
+  .getstarted .transparent .left .h2 {
+    margin: 0px 0px 0px 25px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .getstarted .transparent .right {
+    width: 60%;
+  }
+  .getstarted .transparent .right .p {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .getstarted .transparent .right .button {
+    font-size: 18px;
+    line-height: 12px;
+    padding: 24px 78px;
+    bottom: 0;
+    right: -2px;
+  }
+  .footer .ufooter {
+    padding: 64px 0px 64px 61px;
+    margin: 0px 30px;
+  }
+  .footer .ufooter .newsletter {
+    width: 33%;
+  }
+  .footer .ufooter .newsletter .h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .footer .ufooter .newsletter .p {
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+  .footer .ufooter .newsletter .ebox {
+    height: 46px;
+  }
+  .footer .ufooter .newsletter .ebox .button {
+    padding: 10px 52px;
+    border-radius: 0px 8px 8px 0px;
+  }
+  .footer .ufooter .newsletter .input {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 32px;
+  }
+  .footer .ufooter .list {
+    list-style-type: none;
+  }
+  .footer .ufooter .list .li {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer .ufooter .list2 {
+    list-style-type: none;
+  }
+  .footer .ufooter .list2 .li {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer .bfooter {
+    padding: 17px 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header {
+    margin: 40px 39px !important;
+  }
+  .ham {
+    color: #7161EF;
+    display: block;
+  }
+  .logo {
+    width: 69px !important;
+    position: relative;
+    height: 20px !important;
+  }
+  .nav {
+    display: none !important;
+    width: 615px !important;
+  }
+  .nav ul li {
+    font-size: 18px !important;
+    line-height: 22px;
+    padding: 3px;
+  }
+  .langc {
+    display: none;
+    font-size: 18px !important;
+    line-height: 24px;
+  }
+  .context {
+    margin: 22px 30px 20px 30px;
+  }
+  .context .h2 {
+    font-size: 16px;
+    line-height: 25px;
+    width: 220px;
+  }
+  .context .subtext {
+    padding: 18px 0px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .context .links .figure {
+    width: 125px;
+    height: 82px;
+    position: relative;
+  }
+  .ban {
+    padding: 0px 0px 10px 0px;
+  }
+  .ban .banner {
+    height: 233px;
+  }
+  .platform {
+    margin: 22px 30px 20px 30px;
+  }
+  .platform .h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .platform .subtext {
+    padding: 0px 0px 22px 0px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .platform .row {
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: space-between;
+  }
+  .platform .row .card {
+    max-width: 335px;
+  }
+  .platform .row .card .ils {
+    width: 134px;
+    height: 130px;
+    border-radius: 8px;
+  }
+  .platform .row .card .ils .figure {
+    width: 105px;
+    bottom: 0;
+    height: 103px;
+  }
+  .platform .row .card .subheading {
+    padding: 9px 0px 0px 0px;
+    font-size: 12px;
+    line-height: 18px;
+    width: 130px;
+  }
+  .platform .row .card .description {
+    font-size: 10px;
+    line-height: 14px;
+    width: 130px;
+  }
+  .itworks .h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .itworks .subtext {
+    padding: 0px 0px 12px 0px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .itworks .section {
+    width: 100%;
+    margin: 0px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .itworks .section .left {
+    width: 100%;
+  }
+  .itworks .section .left .figure {
+    width: 100%;
+    height: 370px;
+  }
+  .itworks .section .right {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px 0px 0px;
+  }
+  .itworks .section .right .figure {
+    width: 100%;
+    height: 250px;
+  }
+  .wcare {
+    margin: 20px 30px !important;
+  }
+  .wcare .h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .wcare .subtext {
+    padding: 0px 0px 32px 0px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .wcare .row1 {
+    margin: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .wcare .row1 .docbox {
+    width: 250px;
+    height: 110px;
+    padding: 30px 24px 28px 23px;
+  }
+  .wcare .row1 .docbox .circle {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+  }
+  .wcare .row1 .docbox .circle .figure {
+    width: 30px;
+    height: 30px;
+  }
+  .wcare .row1 .docbox .h4 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .wcare .row1 .docbox .p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .wcare .row2 {
+    margin: 20px 0px;
+    justify-content: center;
+    width: 100%;
+  }
+  .wcare .row2 .docbox {
+    width: 250px;
+    height: 110px;
+    padding: 30px 24px 28px 23px;
+  }
+  .wcare .row2 .docbox .circle {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+  }
+  .wcare .row2 .docbox .circle .figure {
+    width: 30px;
+    height: 30px;
+  }
+  .wcare .row2 .docbox .h4 {
+    white-space: nowrap;
+    width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .wcare .row2 .docbox .p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .contact {
+    margin: 0px 30px;
+  }
+  .contact .h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .contact .p {
+    padding: 0px 0px 32px 0px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .contact .sep {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contact .sep .left {
+    display: none;
+    margin: 0px 17px 0px 0px;
+  }
+  .contact .sep .left .figure {
+    width: 300px;
+    height: 400px;
+    margin: 60px 0px;
+  }
+  .contact .sep .right {
+    width: 100%;
+    margin: 10px 0px 30px 10px;
+  }
+  .contact .sep .right .button {
+    font-size: 12px;
+    line-height: 28px;
+    padding: 4px 24px;
+    width: 87px;
+    margin: 10px 0px 10px 10px;
+  }
+  .contact .sep .right .form {
+    padding: 30px 30px;
+  }
+  .contact .sep .right .form .input {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 32px;
+  }
+  .contact .sep .right .form .message {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 2px;
+    font-weight: 300;
+    height: 119px;
+    padding: 20px 10px 20px 40px;
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .getstarted {
+    margin: 20px 30px 65px 30px;
+    width: 90%;
+  }
+  .getstarted .figure {
+    width: 100%;
+    height: 140px;
+  }
+  .getstarted .transparent {
+    bottom: -50px;
+    width: 75%;
+    height: 100px;
+  }
+  .getstarted .transparent .left {
+    align-items: flex-start;
+    width: 98%;
+  }
+  .getstarted .transparent .left .h2 {
+    margin: 10px 0px 10px 25px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .getstarted .transparent .right {
+    width: 0%;
+  }
+  .getstarted .transparent .right .p {
+    display: none;
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .getstarted .transparent .right .button {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 28px;
+    bottom: 0;
+    right: -2px;
+  }
+  .footer .ufooter {
+    padding: 24px 0px 24px 21px;
+    margin: 0px 20px;
+  }
+  .footer .ufooter .newsletter {
+    width: 33%;
+  }
+  .footer .ufooter .newsletter .h4 {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 6px;
+  }
+  .footer .ufooter .newsletter .p {
+    font-size: 10px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+  .footer .ufooter .newsletter .ebox {
+    height: 26px;
+  }
+  .footer .ufooter .newsletter .ebox .button {
+    padding: 10px 22px;
+    font-size: 8px;
+    line-height: 18px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 3px 26px 9px 26px;
+  }
+  .footer .ufooter .newsletter .input {
+    padding: 12px 0px 12px 6px;
+    margin-bottom: 32px;
+    width: 100px;
+  }
+  .footer .ufooter .list {
+    list-style-type: none;
+  }
+  .footer .ufooter .list .li {
+    margin-bottom: 6px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .footer .ufooter .list2 {
+    list-style-type: none;
+  }
+  .footer .ufooter .list2 .li {
+    margin-bottom: 6px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .footer .bfooter {
+    padding: 17px 0px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .mobilenav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 100%;
+    top: 0;
+    z-index: 11111111111111;
+    color: white;
+  }
+  .mobilenav .mobileback {
+    height: 100%;
+    width: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7161EF;
+    opacity: 0.5;
+  }
+  .mobilenav .mobileback div {
+    margin: 10px 0px 0px 99px;
+    background-color: white;
+    padding: 15px;
+    font-size: 23px;
+    border-radius: 50px;
+    color: #7161EF;
+  }
+  .mobilenav .mobileback div figure {
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  .mobilenav .mobilebar {
+    display: flex;
+    width: calc(100% - 42px);
+    flex-direction: column;
+  }
+  .mobilenav .mobilebar figure {
+    position: relative;
+    margin: 36px 0px 32px 46px;
+  }
+  .mobilenav .mobilebar .uppernav {
+    padding: 33px 0px 0px 46px;
+    border-top: 0.5px solid #000;
+    list-style-type: none;
+  }
+  .mobilenav .mobilebar .uppernav li {
+    padding-bottom: 33px;
+  }
+  .header {
+    width: calc(100% - 80px);
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .hlogo {
+    position: relative;
+    width: 74px !important;
+    height: 41px !important;
+  }
+  .header li {
+    list-style-type: none;
+    font-size: 24px;
+    color: #000000;
+  }
+  .header ul {
+    display: block;
+  }
+  .navbar {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 14px;
+  }
 }
-.ban {
-  padding: 0px 0px 40px 0px;
-}
-
-.platform {
-  margin: 22px 72px 100px 72px;
-}
-.platform .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.platform .subtext {
-  padding: 0px 0px 22px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.platform .row {
-  gap: 18px;
-}
-.platform .row .card {
-  max-width: 335px;
-}
-.platform .row .card .ils {
-  width: 250px;
-  height: 270px;
-  border-radius: 8px;
-}
-.platform .row .card .ils .figure {
-  width: 165px;
-  bottom: 0;
-  height: 155px;
-}
-.platform .row .card .subheading {
-  padding: 29px 0px 0px 0px;
-  font-size: 21px;
-  line-height: 36px;
-  width: 220px;
-}
-.platform .row .card .description {
-  font-size: 16px;
-  line-height: 24px;
-  width: 220px;
-}
-
-.itworks .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.itworks .subtext {
-  padding: 0px 0px 32px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.itworks .section {
-  margin: 0px 72px;
-  gap: 80px;
-}
-.itworks .section .left {
-  width: 48%;
-}
-.itworks .section .left .figure {
-  width: 470px;
-  height: 670px;
-}
-.itworks .section .right {
-  width: 48%;
-  display: flex;
-  margin: 100px 0px 0px 0px;
-}
-.itworks .section .right .figure {
-  width: 502px;
-  height: 465px;
-}
-
-.wcare {
-  margin: 50px 72px;
-}
-.wcare .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.wcare .subtext {
-  padding: 0px 0px 32px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.wcare .row1 {
-  margin: 40px 0px;
-}
-.wcare .row1 .docbox {
-  width: 400px;
-  height: 230px;
-  padding: 60px 44px 58px 43px;
-}
-.wcare .row1 .docbox .circle {
-  width: 100px;
-  height: 100px;
-  top: -70px;
-}
-.wcare .row1 .docbox .circle .figure {
-  width: 55px;
-  height: 55px;
-}
-.wcare .row1 .docbox .h4 {
-  font-size: 22px;
-  line-height: 38px;
-}
-.wcare .row1 .docbox .p {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-}
-.wcare .row2 {
-  margin: 40px 0px;
-}
-.wcare .row2 .docbox {
-  width: 400px;
-  height: 230px;
-  padding: 60px 44px 58px 43px;
-}
-.wcare .row2 .docbox .circle {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -70px;
-}
-.wcare .row2 .docbox .circle .figure {
-  width: 55px;
-  height: 55px;
-}
-.wcare .row2 .docbox .h4 {
-  font-size: 22px;
-  line-height: 38px;
-}
-.wcare .row2 .docbox .p {
-  font-size: 18px;
-  line-height: 32px;
-}
-
-.contact {
-  margin: 0px 72px;
-}
-.contact .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.contact .p {
-  padding: 0px 0px 32px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.contact .sep {
-  width: 100%;
-}
-.contact .sep .left {
-  margin: 0px 57px 0px 0px;
-}
-.contact .sep .left .figure {
-  width: 375px;
-  height: 400px;
-  margin: 60px 0px;
-}
-.contact .sep .right {
-  width: 60%;
-  margin: 10px 0px 30px 10px;
-}
-.contact .sep .right .button {
-  font-size: 18px;
-  line-height: 28px;
-  padding: 10px 40px;
-  width: 132px;
-  margin-bottom: 30px;
-}
-.contact .sep .right .form {
-  padding: 30px 30px;
-}
-.contact .sep .right .form .input {
-  padding: 22px 0px 22px 44px;
-  margin-bottom: 32px;
-}
-.contact .sep .right .form .message {
-  padding: 22px 0px 22px 44px;
-  margin-bottom: 32px;
-  font-weight: 300;
-  height: 119px;
-  padding: 20px 10px 20px 40px;
-  font-size: 18px;
-  line-height: 21.94px;
-}
-
-.getstarted {
-  margin: 20px 72px 115px 72px;
-}
-.getstarted .figure {
-  width: 100%;
-}
-.getstarted .transparent {
-  bottom: -50px;
-  width: 75%;
-  height: 221px;
-}
-.getstarted .transparent .left {
-  width: 40%;
-}
-.getstarted .transparent .left .h2 {
-  margin: 0px 0px 0px 25px;
-  font-size: 24px;
-  line-height: 30px;
-}
-.getstarted .transparent .right {
-  width: 60%;
-}
-.getstarted .transparent .right .p {
-  font-size: 21px;
-  line-height: 28px;
-}
-.getstarted .transparent .right .button {
-  font-size: 18px;
-  line-height: 12px;
-  padding: 24px 78px;
-  bottom: 0;
-  right: -2px;
-}
-
-.footer .ufooter {
-  padding: 64px 0px 64px 61px;
-  margin: 0px 72px;
-}
-.footer .ufooter .newsletter {
-  width: 33%;
-}
-.footer .ufooter .newsletter .h4 {
-  font-size: 18px;
-  line-height: 28px;
-}
-.footer .ufooter .newsletter .p {
-  font-size: 12px;
-  line-height: 28px;
-  margin-bottom: 16px;
-}
-.footer .ufooter .newsletter .ebox {
-  height: 46px;
-}
-.footer .ufooter .newsletter .ebox .button {
-  padding: 10px 52px;
-  border-radius: 0px 8px 8px 0px;
-}
-.footer .ufooter .newsletter .input {
-  padding: 22px 0px 22px 44px;
-  margin-bottom: 32px;
-}
-.footer .ufooter .list {
-  list-style-type: none;
-}
-.footer .ufooter .list .li {
-  margin-bottom: 16px;
-  font-size: 12px;
-  line-height: 16px;
-}
-.footer .ufooter .list2 {
-  list-style-type: none;
-}
-.footer .ufooter .list2 .li {
-  margin-bottom: 16px;
-  font-size: 12px;
-  line-height: 16px;
-}
-.footer .bfooter {
-  padding: 17px 0px;
-}
-
 @font-face {
   font-family: "Roboto Cn";
   src: url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff");
