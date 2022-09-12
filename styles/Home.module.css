@@ -119,6 +119,7 @@
   font-family: "Roboto Lt";
   font-style: normal;
   font-weight: 300;
+  max-width: 800px;
   font-size: 36px;
   line-height: 44px;
   width: 100%;
