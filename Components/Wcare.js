@@ -4,12 +4,24 @@ import Image from "next/image";
 import sc from '../public/sc.png'
 import ed from '../public/ed.png'
 import euf from '../public/euf.png'
+import { useRouter } from 'next/router';
+import en from "../Locales/en"
+import fr from "../Locales/fr"
+
 function Wcare() {
+    const router = useRouter();
+    const { locale } = router;
+    const t = locale === 'en' ?   en : fr;
   return (
     <div className={styles.wcare}>
-             <h2 className={styles.h2}>Why eCare?</h2>
-        <p className={styles.subtext}>With eCare, you control the course of treatment. We back <br></br>
-you up. Make confident decisions in the moments of care with eCare.
+             <h2 className={styles.h2}>
+                {/* Why eCare? */}
+{t.wecare}
+                </h2>
+        <p className={styles.subtext}>
+            {t.web}
+            {/* With eCare, you control the course of treatment. We back <br></br>
+you up. Make confident decisions in the moments of care with eCare. */}
         </p>
         <div className={styles.row1}>
            <div className={styles.docbox}>
@@ -23,8 +35,8 @@ you up. Make confident decisions in the moments of care with eCare.
                         />
                     </figure>
                </div>
-               <h4 className={styles.h4}>Secure communication</h4>
-               <p className={styles.p}>eCare delivers the most secure form of communication, right when you need it.</p>
+               <h4 className={styles.h4}>{t.weh}</h4>
+               <p className={styles.p}>{t.wep}</p>
            </div>
 
            <div className={styles.docbox}>
@@ -38,11 +50,8 @@ you up. Make confident decisions in the moments of care with eCare.
                         />
                     </figure>
                </div>
-               <h4 className={styles.h4}>Experienced Doctor</h4>
-               <p className={styles.p}>With eCare, you can find The Right top rated experienced Doctors For Your medical issues.
-
-
-</p>
+               <h4 className={styles.h4}>{t.weh2}</h4>
+               <p className={styles.p}>{t.wep2}</p>
            </div>
 
         </div>
@@ -58,8 +67,8 @@ you up. Make confident decisions in the moments of care with eCare.
                         />
                     </figure>
                </div>
-               <h4 className={styles.h4}>Easy to use/User Friendly</h4>
-               <p className={styles.p}>We work to offer you the best technology for all kinds of your healthcare needs.</p>
+               <h4 className={styles.h4}>{t.weh3}</h4>
+               <p className={styles.p}>{t.wep3}</p>
            </div>
         </div>
     </div>

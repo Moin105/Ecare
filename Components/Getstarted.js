@@ -2,7 +2,15 @@
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
 import kali from '../public/kali.png'
+import { useRouter } from 'next/router';
+import en from "../Locales/en"
+import fr from "../Locales/fr"
+
 function Getstarted() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ?   en : fr;
+  
   return (
     <div className={styles.get}>
       <div className={styles.getstarted}>
@@ -15,10 +23,8 @@ function Getstarted() {
                         />
         </figure>
         <div className={styles.transparent}>
-            <div className={styles.left}><h2 className={styles.h2}>Connect<br></br> with Your patients from anywhere!</h2></div>
-            <div className={styles.right}><p className={styles.p}>Get more appointments through online bookings
-            Create and view patient records from anywhere
-            Manage your schedule efficiently.</p>
+            <div className={styles.left}><h2 className={styles.h2}>{t.kch}</h2></div>
+            <div className={styles.right}><p className={styles.p}>{t.kcp}</p>
         <button className={styles.button}>Get started</button>
         </div>
            

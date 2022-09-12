@@ -6,7 +6,6 @@ import av from '../public/av.png'
 import nh from '../public/nh.png'
 import raf from '../public/raf.png'
 import { useRouter } from 'next/router';
-
 import en from "../Locales/en"
 import fr from "../Locales/fr"
 

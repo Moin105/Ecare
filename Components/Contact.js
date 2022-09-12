@@ -2,7 +2,14 @@ import React,{useState} from 'react'
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
 import doctor from '../public/doctor.png'
+import { useRouter } from 'next/router';
+import en from "../Locales/en"
+import fr from "../Locales/fr"
+
 function Contact() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ?   en : fr;
     const [inputs, setInputs] = useState({
         name: "",
         email: "",
@@ -48,9 +55,8 @@ function Contact() {
   return (
     <div className={styles.background}>
     <div className={styles.contact}>
-        <h2 className={styles.h2}>Get In touch Today!</h2>
-        <p className={styles.p}>With eCare, you can Book appointments in 5 easy steps as shown below. <br></br>
-           Moreover, you can choose the method of consultancy according to your needs.</p>
+        <h2 className={styles.h2}>{t.gitt}</h2>
+        <p className={styles.p}>{t.gith}</p>
         <div className={styles.sep}>
             <div className={styles.left}>
                 <figure className={styles.figure}>
@@ -91,7 +97,7 @@ function Contact() {
                       value={inputs.message}
                       onChange={handleChange}
                     />
-                     <button className={styles.button}  onClick={handleSubmit}>Send</button>
+                     <button className={styles.button}  onClick={handleSubmit}>{t.send}</button>
                   </form>
                  
             </div>
