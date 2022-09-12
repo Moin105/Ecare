@@ -31,7 +31,7 @@ function Header() {
             <li>{t.home}</li>
             <li>{t.about}</li>
             <li>{t.mobile}</li>
-            <li>Features</li>
+            <li>{t.features}</li>
         </ul>
     </div>
     <div className={styles.langc}><p>

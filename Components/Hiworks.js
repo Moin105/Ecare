@@ -3,12 +3,27 @@ import styles from '../styles/Home.module.css'
 import Image from "next/image";
 import img from '../public/phone.png'
 import die from '../public/dei.png'
+import { useRouter } from 'next/router';
+import en from "../Locales/en"
+import fr from "../Locales/fr"
+
+
 function Hiworks() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ?   en : fr;
+
+
   return (
     <div className={styles.itworks}>
-        <h2 className={styles.h2}>How it’s done?</h2>
-        <p className={styles.subtext}>With eCare, you can Book appointments in 5 easy steps as shown below. <br></br>
-           Moreover, you can choose the method of consultancy according to your needs.
+        <h2 className={styles.h2}>
+          {/* How it’s done? */}
+          {t.hid}
+          </h2>
+        <p className={styles.subtext}>
+          {/* With eCare, you can Book appointments in 5 easy steps as shown below. <br></br>
+           Moreover, you can choose the method of consultancy according to your needs. */}
+        {t.hidp}
         </p>
         <div className={styles.section}>
             <div className={styles.left}>

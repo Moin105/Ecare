@@ -5,16 +5,27 @@ import upload from '../public/upload.png'
 import av from '../public/av.png'
 import nh from '../public/nh.png'
 import raf from '../public/raf.png'
+import { useRouter } from 'next/router';
+
+import en from "../Locales/en"
+import fr from "../Locales/fr"
 
 function Platform() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ?   en : fr;
+
+
   return (
     <div className={styles.platform}>
         <h2 className={styles.h2}>
-           One Platform, Endless Potential!
+          {t.pep}
+           {/* One Platform, Endless Potential! */}
         </h2>
         <p className={styles.subtext}>
-          Search for doctors, specialities, treatments, hospitals and services.<br></br>
-          Find doctor’s reviews and book appointment online, all using the eCare app. 
+         {t.pepp}
+          {/* Search for doctors, specialities, treatments, hospitals and services.<br></br>
+          Find doctor’s reviews and book appointment online, all using the eCare app.  */}
         </p>
         <div className={styles.row}>
           <Card heading="Upload Prescription"des="Doctor can recommend lab tests and upload prescription using eCare mobile app." img={upload} />
