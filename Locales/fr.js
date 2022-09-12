@@ -2,6 +2,7 @@ export default {
     subtitle: 'Accélérateur de science',
     home:'Maison',
     mobile:'Application mobile',
+    about:'Sur',
     features:'Fonctionnalités',
     bh:'Solution automatisée  pour vos besoins de santé !',
     cp:'La santé, la sécurité et le bien-être de nos membres, employés  et les communautés que nous servons est notre priorité absolue.',
