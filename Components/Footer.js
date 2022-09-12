@@ -1,7 +1,12 @@
 import React,{useState} from 'react'
 import styles from '../styles/Home.module.css'
-
+import { useRouter } from 'next/router';
+import en from "../Locales/en"
+import fr from "../Locales/fr"
 function Footer() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ?   en : fr;
     const [inputs, setInputs] = useState({
         email: "",
       });
@@ -9,9 +14,8 @@ function Footer() {
     <div className={styles.footer}>
         <div className={styles.ufooter}>
               <div className={styles.newsletter}> 
-              <h4 className={styles.h4}>Join our Newsletter!</h4>
-              <p className={styles.p}>Take healthcare in your hands with our automated healthcare system. Subscribe to
-our newsletter today!</p>
+              <h4 className={styles.h4}>{t.fnh}</h4>
+              <p className={styles.p}>{t.fnp}</p>
               <div className={styles.ebox}>
               <input
                 type='text'
@@ -21,7 +25,7 @@ our newsletter today!</p>
                 placeholder='Email here'
                 value={inputs.name}
                 />
-                <button className={styles.button}>Send</button>
+                <button className={styles.button}>{t.send}</button>
               </div>
               </div>
               <ul className={styles.list}>
@@ -39,7 +43,7 @@ our newsletter today!</p>
                 <li className={styles.li}>LinkedIn</li>
               </ul>
         </div>
-        <div className={styles.bfooter}>Copyright @ 2021 all rights reserved eCare</div>
+        <div className={styles.bfooter}>{t.cr}</div>
     </div>
   )
 }
