@@ -1448,7 +1448,7 @@ width: 90%;
 
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .header{
         margin: 40px 39px !important;
     }
@@ -1900,7 +1900,52 @@ line-height: 12px;
 }
 
 
-
+@media only screen and (max-width: 370px) {
+    .platform{
+        margin: 22px 30px 20px 30px;
+        .h2{
+            font-size: 16px;
+            line-height: 25px;
+        }
+        .subtext{
+        padding:  0px 0px 22px 0px;
+        font-size: 14px;
+        line-height: 20px;
+        width: 250px;
+        }
+        .row{
+            flex-wrap: wrap;
+flex-direction: column;
+        gap:18px ;
+        justify-content: center;
+        .card{
+            max-width: 335px;
+            .ils{
+                width: 134px;
+                height: 130px;
+                border-radius: 8px;
+                .figure{
+                    width:105px ;
+                    bottom: 0;
+                    height: 103px;
+                }
+            }
+            .subheading{
+                padding:9px 0px 0px 0px;
+                font-size: 12px;
+                line-height: 18px;
+                width: 130px;
+            }
+            .description{            
+                font-size: 10px;
+                line-height: 14px;
+            width: 130px;
+            }
+        }
+            
+        }
+        }
+}
 
 
 

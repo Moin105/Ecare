@@ -1241,7 +1241,7 @@
     padding: 17px 0px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .header {
     margin: 40px 39px !important;
   }
@@ -1659,6 +1659,51 @@
     display: block;
     width: 20px;
     height: 14px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .platform {
+    margin: 22px 30px 20px 30px;
+  }
+  .platform .h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .platform .subtext {
+    padding: 0px 0px 22px 0px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .platform .row {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+  }
+  .platform .row .card {
+    max-width: 335px;
+  }
+  .platform .row .card .ils {
+    width: 134px;
+    height: 130px;
+    border-radius: 8px;
+  }
+  .platform .row .card .ils .figure {
+    width: 105px;
+    bottom: 0;
+    height: 103px;
+  }
+  .platform .row .card .subheading {
+    padding: 9px 0px 0px 0px;
+    font-size: 12px;
+    line-height: 18px;
+    width: 130px;
+  }
+  .platform .row .card .description {
+    font-size: 10px;
+    line-height: 14px;
+    width: 130px;
   }
 }
 @font-face {
