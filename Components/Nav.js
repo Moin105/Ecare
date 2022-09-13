@@ -10,13 +10,20 @@ import Image from "next/image";
 import Link from "next/link";
 function Nav(props) {
   const navHandle = () => {
+    console.log(props)
     props.setNav(false);
+  };
+  const dataHandle = () => {
+    props.setShows(true);
   };
   return (
     <div className={styles.mobilenav}>
       {" "}
       <div className={styles.mobileback}>
-        <div onClick={navHandle}  className={styles.arrow}>
+        <div onClick={()=>{
+            navHandle();
+            dataHandle();
+          }}  className={styles.arrow}>
           {" "}<MdArrowForwardIos/>
           {/* <figure>
             <Image
@@ -38,7 +45,11 @@ function Nav(props) {
           />
         </figure>
         <ul className={styles.uppernav}>
-          <li onClick={navHandle}>
+          <li onClick={()=>{
+            navHandle();
+            dataHandle();
+
+          }}>
             <Link href="/">Home</Link>
           </li>
           <li onClick={navHandle}>

@@ -1624,7 +1624,7 @@
   }
   .mobilenav .mobilebar figure {
     position: relative;
-    margin: 36px 0px 32px 46px;
+    margin: 21px 0px 21px 46px;
   }
   .mobilenav .mobilebar .uppernav {
     padding: 33px 0px 0px 46px;
@@ -1632,7 +1632,7 @@
     list-style-type: none;
   }
   .mobilenav .mobilebar .uppernav li {
-    padding-bottom: 33px;
+    padding-bottom: 16px;
   }
   .header {
     width: calc(100% - 80px);
@@ -1648,7 +1648,7 @@
   }
   .header li {
     list-style-type: none;
-    font-size: 24px;
+    font-size: 14px;
     color: #000000;
   }
   .header ul {

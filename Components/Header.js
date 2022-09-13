@@ -7,13 +7,20 @@ import Nav from './Nav'
 import en from "../Locales/en"
 import fr from "../Locales/fr"
 import {GiHamburgerMenu} from 'react-icons/gi'
+import Link from "next/link";
 
-function Header() {
+
+function Header(props) {
+  const [show ,setShow] = useState(true)
   const navHandle = () => {
-    console.log("$$$$$$$$$$$$$$$$$$$$$$$$", nav);
+    console.log("$$$$$", nav);
     setNav(!nav);
   };
-  const [nav, setNav] = useState(true);
+  const dataHandle = () => {
+    setShow(!show)
+    props.setShow(!show);
+  };
+  const [nav, setNav] = useState(false);
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ?   en : fr;
@@ -34,10 +41,10 @@ function Header() {
         </figure>
     <div className={styles.nav}>
         <ul>
-            <li>{t.home}</li>
-            <li>{t.about}</li>
-            <li>{t.mobile}</li>
-            <li>{t.features}</li>
+            <li><Link href="/#contact" smooth="true">{t.home}</Link></li>
+            <li><Link href="/#footer" smooth="true">{t.about}</Link></li>
+            <li><Link href="/#context" smooth="true">{t.mobile}</Link></li>
+            <li><Link href="/#contact" smooth="true">{t.features}</Link></li>
         </ul>
     </div>
     <div className={styles.langc}><p>
@@ -50,8 +57,11 @@ function Header() {
             <option className="text-black" value="fr">FR</option>
           </select>
       </p></div>
-      <div className={styles.ham} onClick={navHandle}><GiHamburgerMenu/></div>
-      {nav && <Nav setNav={setNav} />}
+      <div className={styles.ham} onClick={()=>{
+        navHandle();
+        dataHandle();
+      }}><GiHamburgerMenu/></div>
+      {nav && <Nav setNav={setNav} setShows={props.setShow} />}
     </header>
   )
 }
