@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Image from "next/image";
 import img from '../public/phone.png'
 import die from '../public/dei.png'
+import di from '../public/di.png'
 import { useRouter } from 'next/router';
 import en from "../Locales/en"
 import fr from "../Locales/fr"
@@ -15,7 +16,7 @@ function Hiworks() {
 
 
   return (
-    <div className={styles.itworks}>
+    <div className={styles.itworks} id='features'>
         <h2 className={styles.h2}>
           {/* How it’s done? */}
           {t.hid}
@@ -38,12 +39,17 @@ function Hiworks() {
             </div>
             <div className={styles.right}>
                 <figure className={styles.figure}>
-                    <Image
+                  {locale == 'en' ? <Image
                         src={die}
                         alt="apple"
                         layout="fill"
                         objectFit="contain"
-                    />
+                    /> : <Image
+                    src={di}
+                    alt="apple"
+                    layout="fill"
+                    objectFit="contain"
+                />}
                 </figure>
             </div>
             {/* <div className={styles.right}>

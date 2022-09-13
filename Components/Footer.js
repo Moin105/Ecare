@@ -11,7 +11,7 @@ function Footer() {
         email: "",
       });
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} id='footer'>
         <div className={styles.ufooter}>
               <div className={styles.newsletter}> 
               <h4 className={styles.h4}>{t.fnh}</h4>

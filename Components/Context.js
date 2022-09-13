@@ -12,7 +12,7 @@ function Context() {
   const { locale } = router;
   const t = locale === 'en' ?   en : fr;
   return (
-    <div className={styles.context}>
+    <div className={styles.context} id='context'>
         <h2 className={styles.h2}>
           {t.bh}
           {/* Automated Solution<br></br> for Your Healthcare Needs! */}

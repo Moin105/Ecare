@@ -54,7 +54,7 @@ function Contact() {
       };
   return (
     <div className={styles.background}>
-    <div className={styles.contact}>
+    <div className={styles.contact} id='contact'>
         <h2 className={styles.h2}>{t.gitt}</h2>
         <p className={styles.p}>{t.gith}</p>
         <div className={styles.sep}>

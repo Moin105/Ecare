@@ -583,7 +583,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 18px !important;
   line-height: 28px;
   margin-bottom: 16px;
 }
@@ -619,7 +619,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px !important;
   line-height: 16px;
 }
 .footer .ufooter .list2 {
@@ -630,7 +630,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px !important;
   line-height: 16px;
   list-style-type: none;
 }
@@ -650,7 +650,7 @@
     height: 37px !important;
   }
   .nav {
-    width: 615px !important;
+    width: 680px !important;
   }
   .nav ul li {
     font-size: 18px !important;
@@ -952,10 +952,14 @@
     height: 37px !important;
   }
   .nav {
-    width: 615px !important;
+    width: 500px !important;
+  }
+  .nav ul {
+    display: flex;
+    gap: 30px !important;
   }
   .nav ul li {
-    font-size: 18px !important;
+    font-size: 14px !important;
     line-height: 22px;
     padding: 3px;
   }
