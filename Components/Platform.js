@@ -27,7 +27,7 @@ function Platform() {
           Find doctor’s reviews and book appointment online, all using the eCare app.  */}
         </p>
         <div className={styles.row}>
-          <Card heading="Upload Prescription"des="Doctor can recommend lab tests and upload prescription using eCare mobile app." img={upload} />
+          <Card heading="Upload Prescription"des="Doctor can recommend lab tests and upload prescription using eCareDocta mobile app." img={upload} />
           <Card heading="In-App Video call"des="You can consult your doctor for your medical needs from the comfort of your house." img={av}/>
           <Card heading="Nearby Hospitals"des="Find and book the best doctors from nearby hospitals based on reviews. " img={nh}/>
           <Card heading="Refer a Friend"des="Refer your friend and earn reward in the form of bonus points" img={raf}/>
