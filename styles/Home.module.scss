@@ -628,6 +628,51 @@ text-align: center;
         }
     }
 }
+// KALA KALAIS
+.review{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #B6C5D1;
+    flex-direction: column;
+    width: 413px;
+    background-color: white;
+    margin: 300px;
+    p{
+        font-family: 'Roboto Lt';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+padding: 45px 35px 24px 35px ;
+color: #263238;
+    }
+    .textdetails{
+        display: flex;
+        padding: 0px 0px 45px 35px ;
+        align-items: center;
+
+        figure{
+            width: 90px;
+            height: 90px;
+            position: relative;
+        }
+        .staras{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px 0px 16px;
+            .figure{
+                width: 88px;
+                height: 15px;
+                position: relative;
+            }
+            h3{
+              
+
+            }
+        }
+    }
+
+}
 // kalo malo
 .getstarted{
     display: flex;
@@ -795,6 +840,24 @@ border-radius: 24px;
     }
 
 }
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
+margin: 100px 0px 60px 0px ;
+text-align: center;
+color: #7161EF;
+    }
+    .high{
+        height: 400px;
+    }
+}
 // 1500 PX 
 
 @media only screen and (max-width: 1500px) {
@@ -831,7 +894,7 @@ border-radius: 24px;
                 line-height: 46px;
         }
     }
-  }
+
   .ban{
     padding:0px 0px 40px 0px;
 }
@@ -1110,7 +1173,7 @@ line-height: 36px;
 
 }
 
-
+}
 // 1100 
 
 @media only screen and (max-width: 1100px) {
@@ -1435,12 +1498,6 @@ width: 90%;
 }
 
 
-
-
-
-
-
-
 @media only screen and (max-width: 450px) {
     .header{
         margin: 40px 39px !important;
@@ -1454,6 +1511,60 @@ width: 90%;
         width: 69px !important;
         position: relative;
         height: 20px !important;
+}
+.customer{
+    h2{
+        font-size: 16px;
+        margin: 50px 0px 20px 0px;
+        line-height: 25px;
+    }
+}
+.high{
+    height: 290px !important;
+}
+
+.review{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #B6C5D1;
+    flex-direction: column;
+    width: 413px;
+    background-color: white;
+    margin: 300px;
+    p{
+        font-family: 'Roboto Lt';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+padding: 25px 25px 24px 25px ;
+color: #263238;
+    }
+    .textdetails{
+        display: flex;
+        padding: 0px 0px 45px 35px ;
+
+        figure{
+            width: 90px;
+            height: 90px;
+            position: relative;
+        }
+        .staras{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px 0px 16px;
+            .figure{
+                width: 88px;
+                height: 15px;
+                position: relative;
+            }
+            h3{
+              
+
+            }
+        }
+    }
+
 }
 .nav{
     display: none !important;

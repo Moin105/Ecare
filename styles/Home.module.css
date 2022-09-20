@@ -477,6 +477,44 @@
   line-height: 21.94px;
 }
 
+.review {
+  display: flex;
+  border-radius: 15px;
+  border: 1px solid #B6C5D1;
+  flex-direction: column;
+  width: 413px;
+  background-color: white;
+  margin: 300px;
+}
+.review p {
+  font-family: "Roboto Lt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 45px 35px 24px 35px;
+  color: #263238;
+}
+.review .textdetails {
+  display: flex;
+  padding: 0px 0px 45px 35px;
+  align-items: center;
+}
+.review .textdetails figure {
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+.review .textdetails .staras {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 16px;
+}
+.review .textdetails .staras .figure {
+  width: 88px;
+  height: 15px;
+  position: relative;
+}
 .getstarted {
   display: flex;
   position: relative;
@@ -643,6 +681,25 @@
   color: #FFFFFF;
 }
 
+.customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.customer h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 100px 0px 60px 0px;
+  text-align: center;
+  color: #7161EF;
+}
+.customer .high {
+  height: 400px;
+}
+
 @media only screen and (max-width: 1500px) {
   .logo {
     width: 155.51px !important;
@@ -673,278 +730,271 @@
     font-size: 32px;
     line-height: 46px;
   }
+  .ban {
+    padding: 0px 0px 40px 0px;
+  }
+  .platform {
+    margin: 22px 172px 100px 172px;
+  }
+  .platform .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .platform .subtext {
+    padding: 0px 0px 22px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .platform .row {
+    gap: 18px;
+  }
+  .platform .row .card {
+    max-width: 335px;
+  }
+  .platform .row .card .ils {
+    width: 250px;
+    height: 270px;
+    border-radius: 8px;
+  }
+  .platform .row .card .ils .figure {
+    width: 165px;
+    bottom: 0;
+    height: 155px;
+  }
+  .platform .row .card .subheading {
+    padding: 29px 0px 0px 0px;
+    font-size: 21px;
+    line-height: 36px;
+    width: 220px;
+  }
+  .platform .row .card .description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 220px;
+  }
+  .itworks .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .itworks .subtext {
+    padding: 0px 0px 32px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .itworks .section {
+    margin: 0px 172px;
+    gap: 80px;
+  }
+  .itworks .section .left {
+    width: 48%;
+  }
+  .itworks .section .left .figure {
+    width: 470px;
+    height: 670px;
+  }
+  .itworks .section .right {
+    width: 48%;
+    display: flex;
+    margin: 100px 0px 0px 0px;
+  }
+  .itworks .section .right .figure {
+    width: 502px;
+    height: 465px;
+  }
+  .wcare {
+    margin: 50px 172px;
+  }
+  .wcare .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .wcare .subtext {
+    padding: 0px 0px 32px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .wcare .row1 {
+    margin: 40px 0px;
+  }
+  .wcare .row1 .docbox {
+    width: 400px;
+    height: 230px;
+    padding: 60px 44px 58px 43px;
+  }
+  .wcare .row1 .docbox .circle {
+    width: 100px;
+    height: 100px;
+    top: -70px;
+  }
+  .wcare .row1 .docbox .circle .figure {
+    width: 55px;
+    height: 55px;
+  }
+  .wcare .row1 .docbox .h4 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .wcare .row1 .docbox .p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .wcare .row2 {
+    margin: 40px 0px;
+  }
+  .wcare .row2 .docbox {
+    width: 400px;
+    height: 230px;
+    padding: 60px 44px 58px 43px;
+  }
+  .wcare .row2 .docbox .circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -70px;
+  }
+  .wcare .row2 .docbox .circle .figure {
+    width: 55px;
+    height: 55px;
+  }
+  .wcare .row2 .docbox .h4 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .wcare .row2 .docbox .p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .contact {
+    margin: 0px 172px;
+  }
+  .contact .h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .contact .p {
+    padding: 0px 0px 32px 0px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .contact .sep {
+    width: 100%;
+  }
+  .contact .sep .left {
+    margin: 0px 57px 0px 0px;
+  }
+  .contact .sep .left .figure {
+    width: 375px;
+    height: 400px;
+    margin: 60px 0px;
+  }
+  .contact .sep .right {
+    width: 60%;
+    margin: 10px 0px 30px 10px;
+  }
+  .contact .sep .right .button {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 40px;
+    width: 132px;
+    margin-bottom: 30px;
+  }
+  .contact .sep .right .form {
+    padding: 30px 30px;
+  }
+  .contact .sep .right .form .input {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 32px;
+  }
+  .contact .sep .right .form .message {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 32px;
+    font-weight: 300;
+    height: 119px;
+    padding: 20px 10px 20px 40px;
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .getstarted {
+    margin: 20px 172px 115px 172px;
+  }
+  .getstarted .figure {
+    width: 100%;
+  }
+  .getstarted .transparent {
+    bottom: -50px;
+    width: 75%;
+    height: 221px;
+  }
+  .getstarted .transparent .left {
+    width: 40%;
+  }
+  .getstarted .transparent .left .h2 {
+    margin: 0px 0px 0px 25px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .getstarted .transparent .right {
+    width: 60%;
+  }
+  .getstarted .transparent .right .p {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .getstarted .transparent .right .button {
+    font-size: 14px;
+    line-height: 12px;
+    padding: 20px 50px;
+    bottom: 0;
+    right: -2px;
+  }
+  .footer .ufooter {
+    padding: 64px 0px 64px 61px;
+    margin: 0px 172px;
+  }
+  .footer .ufooter .newsletter {
+    width: 33%;
+  }
+  .footer .ufooter .newsletter .h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .footer .ufooter .newsletter .p {
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+  .footer .ufooter .newsletter .ebox {
+    height: 46px;
+  }
+  .footer .ufooter .newsletter .ebox .button {
+    padding: 10px 52px;
+    border-radius: 0px 8px 8px 0px;
+  }
+  .footer .ufooter .newsletter .input {
+    padding: 22px 0px 22px 44px;
+    margin-bottom: 32px;
+  }
+  .footer .ufooter .list {
+    list-style-type: none;
+  }
+  .footer .ufooter .list .li {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer .ufooter .list2 {
+    list-style-type: none;
+  }
+  .footer .ufooter .list2 .li {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .footer .bfooter {
+    padding: 17px 0px;
+  }
 }
-.ban {
-  padding: 0px 0px 40px 0px;
-}
-
-.platform {
-  margin: 22px 172px 100px 172px;
-}
-.platform .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.platform .subtext {
-  padding: 0px 0px 22px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.platform .row {
-  gap: 18px;
-}
-.platform .row .card {
-  max-width: 335px;
-}
-.platform .row .card .ils {
-  width: 250px;
-  height: 270px;
-  border-radius: 8px;
-}
-.platform .row .card .ils .figure {
-  width: 165px;
-  bottom: 0;
-  height: 155px;
-}
-.platform .row .card .subheading {
-  padding: 29px 0px 0px 0px;
-  font-size: 21px;
-  line-height: 36px;
-  width: 220px;
-}
-.platform .row .card .description {
-  font-size: 16px;
-  line-height: 24px;
-  width: 220px;
-}
-
-.itworks .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.itworks .subtext {
-  padding: 0px 0px 32px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.itworks .section {
-  margin: 0px 172px;
-  gap: 80px;
-}
-.itworks .section .left {
-  width: 48%;
-}
-.itworks .section .left .figure {
-  width: 470px;
-  height: 670px;
-}
-.itworks .section .right {
-  width: 48%;
-  display: flex;
-  margin: 100px 0px 0px 0px;
-}
-.itworks .section .right .figure {
-  width: 502px;
-  height: 465px;
-}
-
-.wcare {
-  margin: 50px 172px;
-}
-.wcare .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.wcare .subtext {
-  padding: 0px 0px 32px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.wcare .row1 {
-  margin: 40px 0px;
-}
-.wcare .row1 .docbox {
-  width: 400px;
-  height: 230px;
-  padding: 60px 44px 58px 43px;
-}
-.wcare .row1 .docbox .circle {
-  width: 100px;
-  height: 100px;
-  top: -70px;
-}
-.wcare .row1 .docbox .circle .figure {
-  width: 55px;
-  height: 55px;
-}
-.wcare .row1 .docbox .h4 {
-  font-size: 22px;
-  line-height: 38px;
-}
-.wcare .row1 .docbox .p {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-}
-.wcare .row2 {
-  margin: 40px 0px;
-}
-.wcare .row2 .docbox {
-  width: 400px;
-  height: 230px;
-  padding: 60px 44px 58px 43px;
-}
-.wcare .row2 .docbox .circle {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -70px;
-}
-.wcare .row2 .docbox .circle .figure {
-  width: 55px;
-  height: 55px;
-}
-.wcare .row2 .docbox .h4 {
-  font-size: 22px;
-  line-height: 38px;
-}
-.wcare .row2 .docbox .p {
-  font-size: 18px;
-  line-height: 32px;
-}
-
-.contact {
-  margin: 0px 172px;
-}
-.contact .h2 {
-  font-size: 32px;
-  line-height: 50px;
-}
-.contact .p {
-  padding: 0px 0px 32px 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-.contact .sep {
-  width: 100%;
-}
-.contact .sep .left {
-  margin: 0px 57px 0px 0px;
-}
-.contact .sep .left .figure {
-  width: 375px;
-  height: 400px;
-  margin: 60px 0px;
-}
-.contact .sep .right {
-  width: 60%;
-  margin: 10px 0px 30px 10px;
-}
-.contact .sep .right .button {
-  font-size: 18px;
-  line-height: 28px;
-  padding: 10px 40px;
-  width: 132px;
-  margin-bottom: 30px;
-}
-.contact .sep .right .form {
-  padding: 30px 30px;
-}
-.contact .sep .right .form .input {
-  padding: 22px 0px 22px 44px;
-  margin-bottom: 32px;
-}
-.contact .sep .right .form .message {
-  padding: 22px 0px 22px 44px;
-  margin-bottom: 32px;
-  font-weight: 300;
-  height: 119px;
-  padding: 20px 10px 20px 40px;
-  font-size: 18px;
-  line-height: 21.94px;
-}
-
-.getstarted {
-  margin: 20px 172px 115px 172px;
-}
-.getstarted .figure {
-  width: 100%;
-}
-.getstarted .transparent {
-  bottom: -50px;
-  width: 75%;
-  height: 221px;
-}
-.getstarted .transparent .left {
-  width: 40%;
-}
-.getstarted .transparent .left .h2 {
-  margin: 0px 0px 0px 25px;
-  font-size: 24px;
-  line-height: 30px;
-}
-.getstarted .transparent .right {
-  width: 60%;
-}
-.getstarted .transparent .right .p {
-  font-size: 21px;
-  line-height: 28px;
-}
-.getstarted .transparent .right .button {
-  font-size: 14px;
-  line-height: 12px;
-  padding: 20px 50px;
-  bottom: 0;
-  right: -2px;
-}
-
-.footer .ufooter {
-  padding: 64px 0px 64px 61px;
-  margin: 0px 172px;
-}
-.footer .ufooter .newsletter {
-  width: 33%;
-}
-.footer .ufooter .newsletter .h4 {
-  font-size: 18px;
-  line-height: 28px;
-}
-.footer .ufooter .newsletter .p {
-  font-size: 12px;
-  line-height: 28px;
-  margin-bottom: 16px;
-}
-.footer .ufooter .newsletter .ebox {
-  height: 46px;
-}
-.footer .ufooter .newsletter .ebox .button {
-  padding: 10px 52px;
-  border-radius: 0px 8px 8px 0px;
-}
-.footer .ufooter .newsletter .input {
-  padding: 22px 0px 22px 44px;
-  margin-bottom: 32px;
-}
-.footer .ufooter .list {
-  list-style-type: none;
-}
-.footer .ufooter .list .li {
-  margin-bottom: 16px;
-  font-size: 12px;
-  line-height: 16px;
-}
-.footer .ufooter .list2 {
-  list-style-type: none;
-}
-.footer .ufooter .list2 .li {
-  margin-bottom: 16px;
-  font-size: 12px;
-  line-height: 16px;
-}
-.footer .bfooter {
-  padding: 17px 0px;
-}
-
 @media only screen and (max-width: 1100px) {
   .logo {
     width: 155.51px !important;
@@ -1257,6 +1307,51 @@
     width: 69px !important;
     position: relative;
     height: 20px !important;
+  }
+  .customer h2 {
+    font-size: 16px;
+    margin: 50px 0px 20px 0px;
+    line-height: 25px;
+  }
+  .high {
+    height: 290px !important;
+  }
+  .review {
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #B6C5D1;
+    flex-direction: column;
+    width: 413px;
+    background-color: white;
+    margin: 300px;
+  }
+  .review p {
+    font-family: "Roboto Lt";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 25px 25px 24px 25px;
+    color: #263238;
+  }
+  .review .textdetails {
+    display: flex;
+    padding: 0px 0px 45px 35px;
+  }
+  .review .textdetails figure {
+    width: 90px;
+    height: 90px;
+    position: relative;
+  }
+  .review .textdetails .staras {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 16px;
+  }
+  .review .textdetails .staras .figure {
+    width: 88px;
+    height: 15px;
+    position: relative;
   }
   .nav {
     display: none !important;

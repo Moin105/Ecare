@@ -11,6 +11,7 @@ import Wcare from '../Components/Wcare'
 import Contact from '../Components/Contact'
 import Getstarted from '../Components/Getstarted'
 import Footer from '../Components/Footer'
+import MyCarousel from '../Components/Customer'
 export default function Home() {
   const [show , setShow] = useState(true)
   return (
@@ -23,6 +24,7 @@ export default function Home() {
      <Hiworks/>
      <Wcare/>
      <Contact/>
+     <MyCarousel/>
      <Getstarted/>
      <Footer/>
  </>}
