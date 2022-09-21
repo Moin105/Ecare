@@ -8,7 +8,7 @@ import en from "../Locales/en"
 import fr from "../Locales/fr"
 import {GiHamburgerMenu} from 'react-icons/gi'
 import Link from "next/link";
-
+import login from '../public/login.png'
 
 function Header(props) {
   const [show ,setShow] = useState(true)
@@ -49,7 +49,21 @@ function Header(props) {
 
         </ul>
     </div>
-    <div className={styles.langc}><p>
+    <div className={styles.langc}>
+    <Link href="http://admin.ecareserve.com/doctor_login" smooth="true">
+      <button className={styles.button}>
+      <figure className={styles.figure}>
+          <Image
+            src={login}
+            alt="ecare"
+            layout="fill"
+            objectFit="contain"
+          />
+        </figure>
+        Login
+      </button>
+   </Link>
+    <p>
     <select
             onChange={changeLanguage}
             defaultValue={locale}

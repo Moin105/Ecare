@@ -51,9 +51,32 @@ align-items: center;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
+display: flex;
 font-size: 32px;
+gap:10px;
 line-height: 38px;
 color: #7161EF;
+.button{
+  outline: none;
+  font-family: 'Roboto';
+font-style: normal;
+display: flex;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+padding: 10px 32px 11px 37px;
+color: #FFFFFF;
+  border:none;
+  border-radius: 8px;
+  background-color: #7161EF;
+  .figure{
+    width: 17px ;
+    height: 19px;
+    position: relative;
+    margin: 0px 10px 0px 0px;
+  }
+
+}
 }
 
 }
@@ -881,6 +904,7 @@ color: #7161EF;
     .langc{
     font-size: 18px !important;
     line-height:24px;
+    display: flex;
     }
     .context{
         margin: 22px 172px 100px 172px;

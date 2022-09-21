@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect } from "react";
+// import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
 import styles from '../styles/Home.module.css'
 import Review from "./Review";
@@ -9,38 +9,23 @@ import k3 from '../public/k3.png'
 
 import star from '../public/star.png'
 import stars from '../public/stars.png'
-class MyCarousel extends Component {
-  static get CONTAINER_STYLE() {
-    return {
-      height: "10vh",
-      width: "10%",
-      display: "flex",
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "middle"
-    };
-  }
 
-  static get CARD_STYLE() {
-    return {
-      height: "200px",
-      width: "200px",
-      paddingTop: "80px",
-      textAlign: "center",
-      background: "#52C0F5",
-      color: "#FFF",
-      fontFamily: "sans-serif",
-      fontSize: "12px",
-      textTransform: "uppercase",
-      borderRadius: "10px",
-      boxSizing: "border-box",
-      margin: 200
-    };
-  }
+export default function Customer() {
+  
+  useEffect(() => {
+    fetch("http://www.ecareserve.com/api/get_site_review")
+    .then((response) => response.json())
+    .then((res) => {
+      console.log(res);
+    //   setResponse(res.message);
+      console.log(res.message);
+    });
+  }, [])
+  
+  return (
 
-  render() {
-    return (
-      <>
+    <>
+  
       {/* // <div style={MyCarousel.CONTAINER_STYLE}> */}
     
       <div  className={styles.customer}>
@@ -75,10 +60,61 @@ class MyCarousel extends Component {
       </ReactCardCarousel>
        </div>
        </div>
-       </>
-    );
-  }
+      
+    </>
+  )
 }
-export default MyCarousel
+
+// export default Customer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class MyCarousel extends Component {
+//   static get CONTAINER_STYLE() {
+//     return {
+//       height: "10vh",
+//       width: "10%",
+//       display: "flex",
+//       flex: 1,
+//       justifyContent: "center",
+//       alignItems: "middle"
+//     };
+//   }
+
+//   static get CARD_STYLE() {
+//     return {
+//       height: "200px",
+//       width: "200px",
+//       paddingTop: "80px",
+//       textAlign: "center",
+//       background: "#52C0F5",
+//       color: "#FFF",
+//       fontFamily: "sans-serif",
+//       fontSize: "12px",
+//       textTransform: "uppercase",
+//       borderRadius: "10px",
+//       boxSizing: "border-box",
+//       margin: 200
+//     };
+//   }
+
+ 
+// }
+// export default MyCarousel
 // const rootElement = document.getElementById("root");
 // ReactDOM.render(<MyCarousel />, rootElement);
