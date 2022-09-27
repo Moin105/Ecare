@@ -44,4 +44,17 @@ export default {
     p1: `Tim Berners-Lee, chercheur britannique, a inventé le Web au CERN en 1989. À l’origine, le projet, baptisé « World Wide Web », a été conçu et développé pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent s'échanger des informations instantanément.`,
     p2: `Le premier site Web créé au CERN, et dans le monde, était destiné au projet World Wide Web lui-même. Il était hébergé sur l’ordinateur NeXT de Tim Berners-Lee. En 2013, le CERN a entrepris de remettre en service ce premier site Web : info.cern.ch.`,
     p3: `Le 30 avril 1993, le CERN a mis le logiciel du World Wide Web dans le domaine public. Puis il a émis une version suivante de l’application sous licence libre, une façon plus sûre de maximiser sa diffusion. Ce faisant, il a permis à la Toile de se tisser.`,
-  };
+    gits:`About Us`,
+    giths:`eCareDocta est une plateforme de télémédecine engagée à améliorer l'accès aux soins de santé
+à travers l'Afrique.Notre objectif principal est de rapprocher les patients de leurs prestataires de soins de santé sur une plateforme unique
+    où les services de santé tels que les consultations en ligne, y compris le diagnostic
+    et des prescriptions pourraient être proposées aux patients.
+    ` ,
+    nmh:`notre mission`,
+    nmp:`eCareDocta s'efforce de résoudre les problèmes de longs délais d'attente dans les établissements de santé, de surpeuplement dans les établissements de santé avec une possibilité d'augmentation du taux d'infections nosocomiales en raison de la surpopulation, et d'apporter des soins de santé aux personnes qui, pour certaines raisons, ne peuvent pas se rendre dans les établissements de santé à l'heure.\\n
+    Nous ne sommes pas venus prendre la place des hôpitaux. Les hôpitaux ont leur place mais les consultations en ligne sont devenues une nécessité. Nous sommes venus pour améliorer l'accès aux soins de santé afin de garantir que la population africaine reçoive les meilleurs soins de santé possibles à domicile et soit référée aux hôpitaux en cas de besoin.`,
+    nmhl:`notre objectif`,
+    nmpl:`Nous nous engageons à créer une communauté d'individus vivant avec certaines maladies dans un forum commun où ils peuvent interagir avec des spécialistes dans divers domaines et obtenir des conseils pour améliorer leur qualité de vie.
+    Avec des médecins soigneusement sélectionnés disponibles pour servir les patients, nous nous efforçons d'offrir des soins de santé dans une approche holistique, ne laissant personne de côté.
+    Personne ne devrait perdre la vie parce qu'il n'a pas pu avoir accès à un prestataire de soins de santé, et nous nous engageons à avoir un impact positif sur la vie de millions de personnes à travers l'Afrique.`,  
+};
