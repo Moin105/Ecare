@@ -42,7 +42,7 @@ function Header(props) {
     <div className={styles.nav}>
         <ul>
             <li><Link href="/" smooth="true">{t.home}</Link></li>
-            <li><Link href="/#footer" smooth="true">{t.about}</Link></li>
+            <li><Link href="/#about" smooth="true">{t.about}</Link></li>
             <li><Link href="/#features" smooth="true">{t.mobile}</Link></li>
             <li><Link href="/#why" smooth="true">{t.features}</Link></li>
             <li><Link href="/#contact" smooth="true">Contact</Link></li>
