@@ -1,8 +1,8 @@
 export default {
     subtitle: 'Accelerating science',
     home:'Home',
-    mobile:'Mobile Apps',
-    features:'Features',
+    mobile:'How it work?',
+    features:'Why us?',
     bh:'Automated Solution for Your Healthcare Needs!',
     cp:'The health, safety and well-being of our members, employees  and the communities we serve is our top priority.',
     pep: 'One Platform, Endless Potential!',

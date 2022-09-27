@@ -191,9 +191,10 @@
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
+  word-wrap: wrap;
   color: #7161EF;
   line-height: 55px;
-  width: 312px;
+  width: 316px;
 }
 .platform .row .card .description {
   font-family: "Roboto Lt";
@@ -1386,7 +1387,7 @@
     padding: 3px;
   }
   .langc {
-    display: none;
+    display: none !important;
     font-size: 18px !important;
     line-height: 24px;
   }
@@ -1456,7 +1457,16 @@
   .platform .row .card .description {
     font-size: 10px;
     line-height: 14px;
-    width: 130px;
+    width: 131px;
+    height: 40px;
+    white-space: break-spaces;
+    overflow-y: clip;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-wrap: break-word;
+    word-break: break-all;
+    outline: none;
   }
   .itworks .h2 {
     font-size: 16px;
@@ -1528,6 +1538,8 @@
   }
   .wcare .row1 .docbox .p {
     font-weight: 300;
+    overflow-y: hidden;
+    height: 30px;
     font-size: 10px;
     line-height: 14px;
   }
@@ -1606,6 +1618,7 @@
   .contact .sep .right .form .input {
     padding: 22px 0px 22px 44px;
     margin-bottom: 32px;
+    font-size: 12px;
   }
   .contact .sep .right .form .message {
     padding: 22px 0px 22px 44px;
@@ -1613,7 +1626,7 @@
     font-weight: 300;
     height: 119px;
     padding: 20px 10px 20px 40px;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 21.94px;
   }
   .getstarted {

@@ -13,7 +13,7 @@ function Wcare() {
     const { locale } = router;
     const t = locale === 'en' ?   en : fr;
   return (
-    <div className={styles.wcare}>
+    <div className={styles.wcare}id="why">
              <h2 className={styles.h2}>
                 {/* Why eCare? */}
 {t.wecare}

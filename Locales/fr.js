@@ -1,9 +1,9 @@
 export default {
     subtitle: 'Accélérateur de science',
     home:'Maison',
-    mobile:'Application mobile',
+    mobile:'Comment ça marche?',
     about:'Sur',
-    features:'Fonctionnalités',
+    features:'Pourquoi nous?',
     bh:'Solution automatisée  pour vos besoins de santé !',
     cp:'La santé, la sécurité et le bien-être de nos membres, employés  et les communautés que nous servons est notre priorité absolue.',
     pep: 'Une plateforme, un potentiel infini !',

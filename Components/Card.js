@@ -17,7 +17,7 @@ function Card(props) {
         </figure>
         </div>
         <div className={styles.subheading}>{props.heading}</div>
-        <div className={styles.description}>{props.des}</div>
+        <p className={styles.description}>{props.des}</p>
     </div>
   )
 }
