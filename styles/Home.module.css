@@ -294,7 +294,7 @@
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   position: relative;
-  width: 473px;
+  width: 48%;
   height: 360px;
   padding: 115px 45px 65px 46px;
 }
@@ -342,7 +342,7 @@
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   position: relative;
-  width: 473px;
+  width: 48%;
   height: 360px;
   padding: 115px 45px 65px 46px;
 }
@@ -2291,6 +2291,107 @@
     font-size: 10px;
     line-height: 14px;
     width: 130px;
+  }
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 40%;
+  height: 225px;
+  right: 0;
+  width: 73px;
+  background-color: #7161EF;
+}
+.social .close {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  color: white;
+  z-index: 111;
+}
+.social .stext {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+.social .aligns {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.social .sbox {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  font-size: 24px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.social p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+.social .socials {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .social {
+    display: none;
+  }
+  .socials {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    height: 110px;
+    right: 40px;
+    width: 20px;
+  }
+  .socials .aligns {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .socials .sbox {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+    border-radius: 111px;
+    background-color: #7161EF;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .socials p {
+    display: none;
   }
 }
 @font-face {

@@ -21,12 +21,12 @@ export default {
     wecare: `Why eCareDocta?`,
     web: `With eCareDocta, you control the course of treatment. We back
     you up. Make confident decisions in the moments of care with eCareDocta.`,
-    weh: 'Secure communication',
+    weh: 'Multiple Features',
     weh2: 'Experienced Doctor',
     weh3: 'Easy to use/User Friendly',
-    wep: 'eCareDocta delivers the most secure form of communication, right when you need it.',
-    wep2: 'With eCareDocta, you can find The Right top rated experienced Doctors For Your medical issues.',
-    wep3: 'We work to offer you the best technology for all kinds of your healthcare needs.',
+    wep: 'In a single platform, services such as Chat or Video consultations, discussion forums, health tips, and a wide range of health topics are made available to the population.',
+    wep2: 'Our consultants provide as many details as possible about disease conditions and are ready to refer the patients to appropriate health facilities when there is a need for hospital visits and/or hospitalization.',
+    wep3: 'The good user interface and experience on our mobile applications and smooth video calling options make it very easy to use the eCareDocta app.',
     gitt:'Get In touch Today!',
     gith:`With eCareDocta, you can Book appointments in 5 easy steps as shown below.
     Moreover, you can choose the method of consultancy according to your needs.`,

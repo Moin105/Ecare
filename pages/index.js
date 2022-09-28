@@ -13,12 +13,14 @@ import Getstarted from '../Components/Getstarted'
 import Footer from '../Components/Footer'
 import MyCarousel from '../Components/Customer'
 import AboutUs from '../Components/AboutUs'
+import Social from '../Components/Social'
 export default function Home() {
   const [show , setShow] = useState(true)
   return (
     <div className={styles.container}>
      <Header setShow={setShow}/>
  {show &&   <>
+ <Social/>
   <Context/>
      <Banner/>
      <Platform/>

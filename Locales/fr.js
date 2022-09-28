@@ -22,12 +22,12 @@ export default {
     wecare: `Pourquoi eCare ?`,
     web: `Avec eCare, vous contrôlez le déroulement du traitement. Nous sommes de retour
     vous debout. Prenez des décisions en toute confiance dans les moments de soins avec eCare.`,
-    weh: 'Communication sécurisée',
+    weh: 'Fonctionnalités multiples',
     weh2: 'Médecin expérimenté',
     weh3: 'Facile à utiliser/Convivial',
-    wep: 'eCare offre la forme de communication la plus sécurisée, au moment où vous en avez besoin.',
-    wep2: 'Avec eCare, vous pouvez trouver les bons médecins expérimentés les mieux notés pour vos problèmes médicaux.',
-    wep3: 'Nous travaillons pour vous offrir la meilleure technologie pour tous vos besoins en matière de soins de santé.',
+    wep: 'Dans une même plateforme, des services tels que des consultations par Chat ou Vidéo, des forums de discussion, des conseils santé et un large éventail de sujets de santé sont mis à la disposition de la population.',
+    wep2: `Nos consultants fournissent autant de détails que possible sur les conditions de la maladie et sont prêts à orienter les patients vers les établissements de santé appropriés en cas de besoin de visites à l'hôpital et/ou d'hospitalisation.`,
+    wep3: `La bonne interface utilisateur et l'expérience sur nos applications mobiles et les options d'appel vidéo fluides facilitent l'utilisation de l'application eCareDocta.`,
     gitt:`Contactez-nous dès aujourd'hui !`,
     gith:`Avec eCare, vous pouvez prendre des rendez-vous en 5 étapes faciles, comme indiqué ci-dessous.
     De plus, vous pouvez choisir la méthode de conseil en fonction de vos besoins.`,
