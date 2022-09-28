@@ -471,10 +471,17 @@ text-align: center;
             .p{
                 font-family: 'Roboto Lt';
                 font-style: normal;
+                height: 180px;
+                overflow-y: hidden;
                 font-weight: 300;
                 font-size: 24px;
-                line-height: 40px;
+                line-height: 35px;
                 color: #FFFFFF;
+                // overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4; 
+-webkit-box-orient: vertical;
             }
 
         }
@@ -522,10 +529,17 @@ text-align: center;
             .p{
                 font-family: 'Roboto Lt';
                 font-style: normal;
+                height: 180px;
+                overflow-y: hidden;
                 font-weight: 300;
                 font-size: 24px;
-                line-height: 40px;
+                line-height: 35px;
                 color: #FFFFFF;
+                // overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4; 
+-webkit-box-orient: vertical;
             }
 
         }
@@ -1130,7 +1144,7 @@ line-height: 36px;
         .docbox{
             width: 400px;
             height: 230px;
-            padding: 60px 44px 58px 43px;
+            padding: 60px 44px 35px 43px;
             .circle{
                 width: 100px;
                 height: 100px;
@@ -1146,6 +1160,7 @@ line-height: 36px;
             }
             .p{
                 font-weight: 300;
+                -webkit-line-clamp: 3; 
                 font-size: 18px;
                 line-height: 32px;
             }
@@ -1156,7 +1171,7 @@ line-height: 36px;
         .docbox{
             width: 400px;
             height: 230px;
-            padding: 60px 44px 58px 43px;
+            padding: 60px 44px 35px 43px;
             .circle{
                 width: 100px;
                 height: 100px;
@@ -1173,6 +1188,7 @@ line-height: 36px;
             }
             .p{
                 font-size: 18px;
+                -webkit-line-clamp: 3; 
                 line-height: 32px;
             }
         }
@@ -1558,7 +1574,7 @@ margin: 50px 30px !important;
     .docbox{
         width: 400px;
         height: 230px;
-        padding: 60px 44px 58px 43px;
+        padding: 60px 44px 38px 43px;
         .circle{
             width: 100px;
             height: 100px;
@@ -1584,7 +1600,7 @@ margin: 50px 30px !important;
     .docbox{
         width: 400px;
         height: 230px;
-        padding: 60px 44px 58px 43px;
+        padding: 60px 44px 38px 43px;
         .circle{
             width: 100px;
             height: 100px;
@@ -2160,6 +2176,8 @@ justify-content: space-between;
     padding:  0px 0px 12px 0px;
     font-size: 14px;
     line-height: 20px;
+    width: 92%;
+
     }
     .section{
         width: 100%;
@@ -2226,6 +2244,8 @@ margin: 20px 30px !important;
             overflow-y: hidden;
             height: 30px;
             font-size: 10px;
+            -webkit-line-clamp: 2;
+
             line-height: 14px;
         }
     }
@@ -2258,6 +2278,8 @@ margin: 20px 30px !important;
         }
         .p{
             font-weight: 300;
+            -webkit-line-clamp: 2;
+
             overflow-y: hidden;
             height: 30px;
             font-size: 10px;
@@ -2278,7 +2300,7 @@ margin: 0px 30px;
     padding:  0px 0px 32px 0px;
     font-size: 14px;
     line-height: 20px;
-    width: 250px;
+
     } .sep{
     width: 100%;
     flex-direction: column;
@@ -2560,6 +2582,7 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
+    z-index: 1111;
     top: 40%;
     height:225px;
     right: 0;
@@ -2609,11 +2632,11 @@ flex-direction: column;
         line-height: 12px;
         color: #FFFFFF;
     }
-    .socials{
-        display: none;
-    }
+ 
 }
-
+.socials{
+    display: none;
+}
 @media only screen and (max-width: 450px) {
     .social{
         display: none;

@@ -325,10 +325,16 @@
 .wcare .row1 .docbox .p {
   font-family: "Roboto Lt";
   font-style: normal;
+  height: 180px;
+  overflow-y: hidden;
   font-weight: 300;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 35px;
   color: #FFFFFF;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 .wcare .row2 {
   margin: 70px 0px;
@@ -373,10 +379,16 @@
 .wcare .row2 .docbox .p {
   font-family: "Roboto Lt";
   font-style: normal;
+  height: 180px;
+  overflow-y: hidden;
   font-weight: 300;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 35px;
   color: #FFFFFF;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .background {
@@ -952,7 +964,7 @@
   .wcare .row1 .docbox {
     width: 400px;
     height: 230px;
-    padding: 60px 44px 58px 43px;
+    padding: 60px 44px 35px 43px;
   }
   .wcare .row1 .docbox .circle {
     width: 100px;
@@ -969,6 +981,7 @@
   }
   .wcare .row1 .docbox .p {
     font-weight: 300;
+    -webkit-line-clamp: 3;
     font-size: 18px;
     line-height: 32px;
   }
@@ -978,7 +991,7 @@
   .wcare .row2 .docbox {
     width: 400px;
     height: 230px;
-    padding: 60px 44px 58px 43px;
+    padding: 60px 44px 35px 43px;
   }
   .wcare .row2 .docbox .circle {
     width: 100px;
@@ -996,6 +1009,7 @@
   }
   .wcare .row2 .docbox .p {
     font-size: 18px;
+    -webkit-line-clamp: 3;
     line-height: 32px;
   }
   .contact {
@@ -1363,7 +1377,7 @@
   .wcare .row1 .docbox {
     width: 400px;
     height: 230px;
-    padding: 60px 44px 58px 43px;
+    padding: 60px 44px 38px 43px;
   }
   .wcare .row1 .docbox .circle {
     width: 100px;
@@ -1389,7 +1403,7 @@
   .wcare .row2 .docbox {
     width: 400px;
     height: 230px;
-    padding: 60px 44px 58px 43px;
+    padding: 60px 44px 38px 43px;
   }
   .wcare .row2 .docbox .circle {
     width: 100px;
@@ -1928,6 +1942,7 @@
     padding: 0px 0px 12px 0px;
     font-size: 14px;
     line-height: 20px;
+    width: 92%;
   }
   .itworks .section {
     width: 100%;
@@ -1993,6 +2008,7 @@
     overflow-y: hidden;
     height: 30px;
     font-size: 10px;
+    -webkit-line-clamp: 2;
     line-height: 14px;
   }
   .wcare .row2 {
@@ -2024,6 +2040,7 @@
   }
   .wcare .row2 .docbox .p {
     font-weight: 300;
+    -webkit-line-clamp: 2;
     overflow-y: hidden;
     height: 30px;
     font-size: 10px;
@@ -2040,7 +2057,6 @@
     padding: 0px 0px 32px 0px;
     font-size: 14px;
     line-height: 20px;
-    width: 250px;
   }
   .contact .sep {
     width: 100%;
@@ -2302,6 +2318,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 1111;
   top: 40%;
   height: 225px;
   right: 0;
@@ -2352,7 +2369,8 @@
   line-height: 12px;
   color: #FFFFFF;
 }
-.social .socials {
+
+.socials {
   display: none;
 }
 
