@@ -1981,8 +1981,8 @@
     top: -20px;
   }
   .wcare .row1 .docbox .circle .figure {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   .wcare .row1 .docbox .h4 {
     font-size: 16px;
@@ -2011,8 +2011,8 @@
     top: -20px;
   }
   .wcare .row2 .docbox .circle .figure {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   .wcare .row2 .docbox .h4 {
     white-space: nowrap;
@@ -2024,6 +2024,8 @@
   }
   .wcare .row2 .docbox .p {
     font-weight: 300;
+    overflow-y: hidden;
+    height: 30px;
     font-size: 10px;
     line-height: 14px;
   }
@@ -2070,7 +2072,7 @@
   .contact .sep .right .form .input {
     padding: 22px 0px 22px 44px;
     margin-bottom: 32px;
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .contact .sep .right .form .message {
     padding: 22px 0px 22px 44px;
@@ -2146,6 +2148,7 @@
     padding: 3px 26px 9px 26px;
   }
   .footer .ufooter .newsletter .input {
+    font-size: 10px;
     padding: 12px 0px 12px 6px;
     margin-bottom: 32px;
     width: 100px;
