@@ -1030,6 +1030,7 @@ color: #7161EF;
             padding: 3px;
             }
           }
+
         }
     .langc{
     font-size: 18px !important;
@@ -2487,6 +2488,30 @@ line-height: 12px;
         padding: 33px 0px 0px 46px;
         border-top: 0.5px solid #000;
         list-style-type: none;
+      li a  .button{
+            outline: none;
+            font-family: 'Roboto Lt';
+          font-style: normal;
+          display: flex;
+          font-weight: 400;
+          font-size: 12px;
+          position: absolute;
+          right: 50px;
+          top: 25px;
+          line-height: 19px;
+          padding: 6px 20px 8px 7px;
+          color: #FFFFFF;
+            border:none;
+            border-radius: 8px;
+            background-color: #7161EF;
+            .figure{
+              width: 17px ;
+              height: 19px;
+              position: relative;
+              margin: 0px 10px 0px 0px;
+            }
+          
+          }
         li {
           padding-bottom: 16px;
         }

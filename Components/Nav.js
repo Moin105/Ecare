@@ -2,6 +2,11 @@ import React from "react";
 import styles from '../styles/Home.module.css'
 import logo from '../public/logo.png'
 import {MdArrowForwardIos} from 'react-icons/md'
+import login from '../public/login.png'
+import { useRouter } from 'next/router';
+
+import en from "../Locales/en"
+import fr from "../Locales/fr"
 
 // import styles from '../styles/Home.module.css'
 // import logo from "../public/logo.png";
@@ -15,6 +20,14 @@ function Nav(props) {
   };
   const dataHandle = () => {
     props.setShows(true);
+  };
+  
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ?   en : fr;
+  const changeLanguage = (e) => {
+    const locale = e.target.value;
+    router.push(router.pathname, router.asPath, { locale });
   };
   return (
     <div className={styles.mobilenav}>
@@ -52,21 +65,61 @@ function Nav(props) {
           }}>
             <Link href="/">Home</Link>
           </li>
-          <li onClick={navHandle}>
-            <Link href="/portfolio">About</Link>
+          <li onClick={()=>{
+            navHandle();
+            dataHandle();
+
+          }}>
+            <Link href="/#about">About</Link>
           </li>
-          <li onClick={navHandle}>
+          <li  onClick={()=>{
+            navHandle();
+            dataHandle();
+
+          }}>
             <Link href="/#services">How it works </Link>
           </li>
-          <li onClick={navHandle}>
+          <li  onClick={()=>{
+            navHandle();
+            dataHandle();
+
+          }}>
             <Link href="/#contact">Why us</Link>
           </li>
-          <li onClick={navHandle}>
+          <li  onClick={()=>{
+            navHandle();
+            dataHandle();
+
+          }}>
             <Link href="/#contact">Contact us</Link>
           </li>
-          <li onClick={navHandle}>
+          <li >
             {" "}
-            <Link href="/#about">Language</Link>
+            <p>
+    <select
+            onChange={changeLanguage}
+            defaultValue={locale}
+            className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
+          >
+            <option className="text-black" value="en">EN</option>
+            <option className="text-black" value="fr">FR</option>
+          </select>
+      </p>
+          </li>
+          <li>
+          <a href="http://admin.ecareserve.com/doctor_login" smooth="true">
+      <button className={styles.button}>
+      <figure className={styles.figure}>
+          <Image
+            src={login}
+            alt="ecare"
+            layout="fill"
+            objectFit="contain"
+          />
+        </figure>
+        Login
+      </button>
+   </a>
           </li>
         </ul>
       </div>
