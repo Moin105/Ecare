@@ -26,9 +26,9 @@
   align-items: center;
 }
 .header .logo {
-  width: 194.51px;
+  width: 240.51px;
   position: relative;
-  height: 57px;
+  height: 127px;
 }
 .header .nav {
   width: 763px;
@@ -113,6 +113,7 @@
 }
 .context .links .figure {
   width: 240px;
+  cursor: pointer;
   height: 82px;
   position: relative;
 }
@@ -848,7 +849,7 @@
   .logo {
     width: 155.51px !important;
     position: relative;
-    height: 37px !important;
+    height: 137px !important;
   }
   .nav {
     width: 680px !important;
@@ -1258,7 +1259,7 @@
   .logo {
     width: 155.51px !important;
     position: relative;
-    height: 37px !important;
+    height: 137px !important;
   }
   .nav {
     width: 500px !important;
@@ -1669,16 +1670,16 @@
 }
 @media only screen and (max-width: 450px) {
   .header {
-    margin: 40px 39px !important;
+    margin: 10px 39px !important;
   }
   .ham {
     color: #7161EF;
     display: block;
   }
   .logo {
-    width: 69px !important;
+    width: 169px !important;
     position: relative;
-    height: 20px !important;
+    height: 70px !important;
   }
   .customer h2 {
     font-size: 16px;
@@ -2230,7 +2231,7 @@
   }
   .mobilenav .mobilebar figure {
     position: relative;
-    margin: 21px 0px 21px 46px;
+    margin: 10px 0px 21px 22px;
   }
   .mobilenav .mobilebar .uppernav {
     padding: 33px 0px 0px 46px;
@@ -2272,8 +2273,8 @@
   }
   .header .hlogo {
     position: relative;
-    width: 74px !important;
-    height: 41px !important;
+    width: 133px !important;
+    height: 76px !important;
   }
   .header li {
     list-style-type: none;

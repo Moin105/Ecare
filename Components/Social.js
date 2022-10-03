@@ -6,16 +6,16 @@ import {IoMdClose} from 'react-icons/io'
 import Link from "next/link";
 
 function Social() {
-    const [show ,setShow] = useState(true)
+    const [show ,setShow] = useState(false)
   return (
     <>
-      <div className={styles.social} onClick={()=>{setShow(!show)}}>
+      <div className={styles.social} onClick={()=>{setShow(false)}}>
    {  show ? <p className={styles.stext}>Social Media</p>:
         
         <>
-        <div className={styles.close}  onClick={()=>{setShow(true)}}>
+        {/* <div className={styles.close}  onClick={()=>{setShow(true)}}>
         <IoMdClose/>
-        </div>
+        </div> */}
         <div className={styles.aligns}>
         <Link href="https://twitter.com/ecare_med" smooth="true">
             <div className={styles.sbox}>
