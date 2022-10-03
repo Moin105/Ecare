@@ -11,7 +11,7 @@ function Contact() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ?   en : fr;
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [response, setResponse] = useState("");
     const [inputs, setInputs] = useState({
         name: "",
@@ -107,7 +107,7 @@ function Contact() {
                       value={inputs.message}
                       onChange={handleChange}
                     />
-                     <button className={styles.button}  onClick={handleSubmit}>{t.send}</button>
+                     <button className={styles.button}  onClick={handleSubmit}>{t.fnh}</button>
                   </form>
                  
             </div>

@@ -35,7 +35,7 @@ export default {
     kcp:`Get more appointments through online bookings Create and view patient records from anywhere Manage your schedule efficiently.`,
     about: 'About',
     ns: 'Get Started',
-    fnh:"Join our Newsletter!",
+    fnh:"Subscribe!",
     fnp:"Take healthcare in your hands with our automated healthcare system. Subscribe to our newsletter today!",
     science: 'Science',
     research: 'Research',
