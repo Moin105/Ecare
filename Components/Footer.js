@@ -4,14 +4,57 @@ import { useRouter } from 'next/router';
 import en from "../Locales/en"
 import fr from "../Locales/fr"
 import Link from "next/link";
+import Modal from './modal';
 
 function Footer() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ?   en : fr;
+  const [show, setShow] = useState(false);
+  const [response, setResponse] = useState("");
     const [inputs, setInputs] = useState({
+
         email: "",
+
       });
+      const handleChange = (e) => {
+        setInputs({
+          ...inputs,
+          [e.target.name]: e.target.value,
+        });
+      };
+      const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        if ( inputs.email == "") {
+            console.log("gee")
+          setShow(true);
+          setResponse("Enter Required Details");
+          setTimeout(function () {
+            setShow(false);
+          }, 5000);
+          return;
+        } else {
+          const requestOptions = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(inputs),
+          };
+    
+          fetch("https://www.admin.ecareserve.com/api/newsletter", requestOptions)
+            .then((response) => response.json())
+            .then((res) => {
+              console.log(res);
+              setResponse(res.message);
+              console.log(res.message);
+        
+            });
+          setShow(true);
+          setTimeout(function () {
+            setShow(false);
+          }, 1000);
+        }
+      };
   return (
     <div className={styles.footer} id='footer'>
         <div className={styles.ufooter}>
@@ -25,9 +68,10 @@ function Footer() {
                 id='email'
                 className={styles.input}
                 placeholder='Email here'
-                value={inputs.name}
+                value={inputs.email}
+                onChange={handleChange}
                 />
-                <button className={styles.button}>{t.fnh}</button>
+                <button className={styles.button}   onClick={handleSubmit}>{t.fnh}</button>
               </div>
               </div>
               <ul className={styles.list}>  
@@ -48,6 +92,8 @@ function Footer() {
               </ul>
         </div>
         <div className={styles.bfooter}>{t.cr}</div>
+        {show == true && <Modal message={response} />}
+
     </div>
   )
 }
