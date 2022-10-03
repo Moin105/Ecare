@@ -1,8 +1,9 @@
 import React,{useEffect} from 'react'
 import styles from '../styles/Home.module.css'
 import google from '../public/google.png'
-import Image from "next/image";
-import apple from '../public/apple.png'
+import Image from "next/image"; 
+import apple from '../public/apple.png';
+import Link from "next/link";
 import { useRouter } from 'next/router';
 
 import en from "../Locales/en"
@@ -41,7 +42,9 @@ function Context() {
         {t.cp}
         </p>
         <div className={styles.links}>
-        <figure className={styles.figure}>
+       
+        <Link href="/coming-soon">
+         <figure className={styles.figure}>
           <Image
             src={apple}
             alt="apple"
@@ -49,7 +52,9 @@ function Context() {
             objectFit="contain"
           />
         </figure>
-        <figure className={styles.figure}>
+        </Link>
+        <Link href="/coming-soon">
+            <figure className={styles.figure}>
           <Image
             src={google}
             alt="google"
@@ -57,6 +62,8 @@ function Context() {
             objectFit="contain"
           />
         </figure>
+        </Link>
+    
         </div>
     </div>
   )

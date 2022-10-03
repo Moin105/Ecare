@@ -2438,6 +2438,13 @@
     display: none;
   }
 }
+.comingsoon {
+  margin: 1% 0px;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
 @font-face {
   font-family: "Roboto Cn";
   src: url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff");
