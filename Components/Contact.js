@@ -107,7 +107,7 @@ function Contact() {
                       value={inputs.message}
                       onChange={handleChange}
                     />
-                     <button className={styles.button}  onClick={handleSubmit}>{t.fnh}</button>
+                     <button className={styles.button}  onClick={handleSubmit}>{t.send}</button>
                   </form>
                  
             </div>

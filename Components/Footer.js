@@ -27,7 +27,7 @@ function Footer() {
                 placeholder='Email here'
                 value={inputs.name}
                 />
-                <button className={styles.button}>{t.send}</button>
+                <button className={styles.button}>{t.fnh}</button>
               </div>
               </div>
               <ul className={styles.list}>  
