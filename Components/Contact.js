@@ -58,7 +58,7 @@ function Contact() {
           setShow(true);
           setTimeout(function () {
             setShow(false);
-          }, 1000);
+          }, 3000);
         }
       };
   return (
