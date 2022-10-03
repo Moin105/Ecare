@@ -5,11 +5,14 @@ import doctor from '../public/doctor.png'
 import { useRouter } from 'next/router';
 import en from "../Locales/en"
 import fr from "../Locales/fr"
+import Modal from './modal'
 
 function Contact() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ?   en : fr;
+  const [show, setShow] = useState(true);
+  const [response, setResponse] = useState("");
     const [inputs, setInputs] = useState({
         name: "",
         email: "",
@@ -26,11 +29,11 @@ function Contact() {
     
         if (inputs.name == "" || inputs.email == "" || inputs.message == "") {
             console.log("gee")
-        //   setShow(true);
-        //   setResponse("Enter Required Details");
-        //   setTimeout(function () {
-        //     setShow(false);
-        //   }, 5000);
+          setShow(true);
+          setResponse("Enter Required Details");
+          setTimeout(function () {
+            setShow(false);
+          }, 5000);
           return;
         } else {
           const requestOptions = {
@@ -39,20 +42,27 @@ function Contact() {
             body: JSON.stringify(inputs),
           };
     
-          fetch("http://www.ecareserve.com/api/contact_form", requestOptions)
+          fetch("https://www.admin.ecareserve.com/api/contact_form", requestOptions)
             .then((response) => response.json())
             .then((res) => {
               console.log(res);
-            //   setResponse(res.message);
+              setResponse(res.message);
               console.log(res.message);
+              setInputs({
+                ...inputs,
+                name:"",
+                message:"",
+                email:""
+              });
             });
-        //   setShow(true);
-        //   setTimeout(function () {
-        //     setShow(false);
-        //   }, 1000);
+          setShow(true);
+          setTimeout(function () {
+            setShow(false);
+          }, 1000);
         }
       };
   return (
+    <>
     <div className={styles.background}>
     <div className={styles.contact} id='contact'>
         <h2 className={styles.h2}>{t.gitt}</h2>
@@ -104,7 +114,9 @@ function Contact() {
         </div>
         </div>
     </div>
-  )
+    
+    {show == true && <Modal message={response} />}
+</>)
 }
 
 export default Contact

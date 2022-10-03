@@ -12,15 +12,15 @@ import stars from '../public/stars.png'
 
 export default function Customer() {
   
-  useEffect(() => {
-    fetch("http://www.ecareserve.com/api/get_site_review")
-    .then((response) => response.json())
-    .then((res) => {
-      console.log(res);
-    //   setResponse(res.message);
-      console.log(res.message);
-    });
-  }, [])
+  // useEffect(() => {
+  //   // fetch("https://www.admin.ecareservecom/api/get_site_review")
+  //   .then((response) => response.json())
+  //   .then((res) => {
+  //     console.log(res);
+  //   //   setResponse(res.message);
+  //     console.log(res.message);
+  //   });
+  // }, [])
   
   return (
 

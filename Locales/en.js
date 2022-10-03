@@ -30,7 +30,7 @@ export default {
     gitt:'Get In touch Today!',
     gith:`With eCareDocta, you can Book appointments in 5 easy steps as shown below.
     Moreover, you can choose the method of consultancy according to your needs.`,
-    send:"send",
+    send:"Send",
     kch:`Connect with Your patients from anywhere!`,
     kcp:`Get more appointments through online bookings Create and view patient records from anywhere Manage your schedule efficiently.`,
     about: 'About',

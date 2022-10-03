@@ -10,7 +10,7 @@ import fr from "../Locales/fr"
 function Context() {
   const router = useRouter();
   useEffect(() => {
-    fetch('http://www.ecareserve.com/api/show_links') 
+    fetch('https://www.admin.ecareserve.com/api/show_links') 
     .then((res) => {
       if (res.status == 200) {
         return res.json();
