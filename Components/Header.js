@@ -50,7 +50,7 @@ function Header(props) {
         </ul>
     </div>
     <div className={styles.langc}>
-    <Link href="http://admin.ecareserve.com/doctor_login" smooth="true">
+    <Link href="https://admin.ecareserve.com/doctor_login" smooth="true">
       <button className={styles.button}>
       <figure className={styles.figure}>
           <Image

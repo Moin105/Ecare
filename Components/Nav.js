@@ -107,7 +107,7 @@ function Nav(props) {
       </p>
           </li>
           <li>
-          <a href="http://admin.ecareserve.com/doctor_login" smooth="true">
+          <a href="https://admin.ecareserve.com/doctor_login" smooth="true">
       <button className={styles.button}>
       <figure className={styles.figure}>
           <Image

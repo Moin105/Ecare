@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import styles from '../styles/Home.module.css'
 import {FaInstagramSquare,FaFacebookF} from 'react-icons/fa'
 import {BsTwitter} from 'react-icons/bs'
-import {IoMdClose} from 'react-icons/io'
+import {IoMdClose,IoLogoLinkedin} from 'react-icons/io'
 import Link from "next/link";
 
 function Social() {
@@ -17,12 +17,18 @@ function Social() {
         <IoMdClose/>
         </div> */}
         <div className={styles.aligns}>
-        <Link href="https://twitter.com/ecare_med" smooth="true">
+        <Link href="https://twitter.com/eCareDocta" smooth="true">
             <div className={styles.sbox}>
                 <BsTwitter/>
                 <p>Twitter</p>
             </div>
-        </Link>    
+        </Link>
+        <Link href="https://twitter.com/eCareDocta" smooth="true">
+            <div className={styles.sbox}>
+                <IoLogoLinkedin/>
+                <p>LinkedIn</p>
+            </div>
+        </Link>        
         <Link href="https://www.facebook.com/profile.php?id=100086304606356" smooth="true">
             <div className={styles.sbox}>
                 <FaFacebookF/>
@@ -45,6 +51,12 @@ function Social() {
             <div className={styles.sbox}>
                 <BsTwitter/>
                 <p>Twitter</p>
+            </div>
+        </Link>    
+        <Link href="https://twitter.com/eCareDocta" smooth="true">
+            <div className={styles.sbox}>
+                <IoLogoLinkedin/>
+                <p>LinkedIn</p>
             </div>
         </Link>    
         <Link href="https://www.facebook.com/profile.php?id=100086304606356" smooth="true">
