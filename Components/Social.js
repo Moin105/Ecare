@@ -23,7 +23,7 @@ function Social() {
                 <p>Twitter</p>
             </div>
         </Link>
-        <Link href="https://twitter.com/eCareDocta" smooth="true">
+        <Link href="https://www.linkedin.com/company/ecaredocta/" smooth="true">
             <div className={styles.sbox}>
                 <IoLogoLinkedin/>
                 <p>LinkedIn</p>
