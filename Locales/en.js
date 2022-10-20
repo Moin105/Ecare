@@ -1,6 +1,7 @@
 export default {
     subtitle: 'Accelerating science',
     home:'Home',
+    gis:`We are looking forward to hearing from you. Fill the following form and we will get back to you as soon as possible.`,
     mobile:'How it work?',
     features:'Why us?',
     bh:'Automated Solution for Your Healthcare Needs!',
