@@ -2,6 +2,7 @@ export default {
     subtitle: 'Accélérateur de science',
     home:'Maison',
     mobile:'Comment ça marche?',
+    gis:`Nous sommes impatients de vous entendre. Remplissez le formulaire suivant et nous vous répondrons dans les plus brefs délais.`,
     about:'Sur',
     features:'Pourquoi nous?',
     bh:'Solution automatisée  pour vos besoins de santé !',
