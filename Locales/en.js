@@ -14,7 +14,7 @@ export default {
    p1:'Doctor can recommend lab tests and upload prescription using eCareDocta mobile app.',
    p2:'You can consult your doctor for your medical needs from the comfort of your house.',
    p3:'Find and book the best doctors from nearby hospitals based on reviews.',
-   p4:'Refer your friend and earn reward in the form of bonus points',
+   p4:'Refer your friend and earn reward in the form of bonus points.',
     hid: 'How it’s done?',
     hidp: `With eCareDocta, you can Book appointments in 5 easy steps as shown below.
     Moreover, you can choose the method of consultancy according to your needs.`,
