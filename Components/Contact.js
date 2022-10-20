@@ -61,7 +61,7 @@ function Contact() {
     <div className={styles.background}>
     <div className={styles.contact} id='contact'>
         <h2 className={styles.h2}>{t.gitt}</h2>
-        <p className={styles.p}>{t.gith}</p>
+        <p className={styles.p}>{t.gis}</p>
         <div className={styles.sep}>
             <div className={styles.left}>
                 <figure className={styles.figure}>
